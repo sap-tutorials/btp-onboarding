@@ -1,10 +1,10 @@
 ---
-author_name: Oliver Stiefbold
-author_profile: https://github.com/Gituserneumann
+author_name: Nagesh Caparthy, Oliver Stiefbold
+author_profile: https://github.com/nagesh-caparthy
 keywords: About BTP Business Technology Platform
 auto_validation: true
-primary_tag: products>sap-business-technology-platform
-tags: [ products>sap-business-technology-platform, tutorial>beginner, topic>cloud ]
+primary_tag: software-product>sap-business-technology-platform
+tags: [ software-product>SAP BTP, Cloud Foundry runtime and environment, tutorial>tutorial tutorial>beginner, topic>cloud ]
 time: 15
 parser: v2
 ---

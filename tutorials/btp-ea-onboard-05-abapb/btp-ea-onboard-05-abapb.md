@@ -3,8 +3,8 @@ author_name: Oliver Stiefbold
 author_profile: https://github.com/Gituserneumann
 keywords: About BTP Business Technology Platform
 auto_validation: true
-primary_tag: products>sap-business-technology-platform
-tags: [ products>sap-business-technology-platform, tutorial>beginner, topic>cloud ]
+primary_tag: software-product>sap-business-technology-platform
+tags: [ software-product>SAP BTP, ABAP environment, tutorial>tutorial tutorial>beginner, topic>cloud ]
 time: 15
 parser: v2
 ---
@@ -37,7 +37,7 @@ You can find boosters under the navigation entry "boosters" in your global accou
 
 ![Find Boosters](images/7_ab_1_findbooster.png)
 
-<br>
+
 
 ### Run Booster "Prepare an Account for ABAP Development”
 
@@ -51,11 +51,10 @@ In the boosters overview, select the booster "Prepare an Account for ABAP Develo
 
 Press **"Start"** to start the booster.
 
-<br>
-
 ![Find Boosters](images/7_ab_2_startbooster.png)
 
-<br>
+
+
 
 ### Booster Step 1 - Check Prerequisites
 
@@ -86,8 +85,11 @@ Provide the following entries to the booster:
 2. A subaccount name of your choice.
 
 3. Provider (Note: Only multi-cloud providers support Cloud Foundry runtime. SAP Data Center cannot be selected).
+
 4. Region (Typically near your location).
+
 5. Subdomain (Note: Subdomain name is used as URL access and it cannot be changed once created).
+
 6. Org name of your choice.
 
 7. Space name (typically DEV, TEST, or PROD).

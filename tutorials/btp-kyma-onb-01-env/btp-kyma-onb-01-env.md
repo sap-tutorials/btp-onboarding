@@ -1,10 +1,10 @@
 ---
-author_name: Oliver Stiefbold
-author_profile: https://github.com/Gituserneumann
-keywords: About BTP Business Technology Platform
+author_name: Oliver Stiefbold, Gaurav Abbi
+author_profile: https://github.com/abbi-gaurav
+keywords: Setup SAP BTP, Kyma runtime
 auto_validation: true
-primary_tag: products>sap-business-technology-platform
-tags: [ products>sap-business-technology-platform, tutorial>beginner, topic>cloud ]
+primary_tag: software-product>SAP BTP, Kyma runtime
+tags: [ tutorial>beginner, tutorial>tutorial, topic>cloud]
 time: 15
 parser: v2
 ---
@@ -183,6 +183,9 @@ Once your subaccount is entitled to use Kyma Runtime, you can "Enable Kyma" in y
 
     ![Your Kyma Dasboard, Cluster Details](images/2_11_kyma_dashboard.png)
 
+    Istio is an open-source service mesh that provides a uniform way to manage, connect, and secure microservices.
+
+    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the application of API Gateway’s configuration and handles resource reconciliation.
 
 
 ### Enable SAP BTP Kyma Modules
@@ -195,9 +198,9 @@ If you want to enable additional modules, follow this procedure:
 
 #### Procedure
 
-1. In your BTP Cockpit goto your subaccount, choose Services and the Instances and Subscriptions.
+1. In your BTP Cockpit go to your subaccount, choose Services and the Instances and Subscriptions.
 
-2. In your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment" and clikc on three dots `...`. Choose "Go to Dasboard". 
+2. In your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment" and click on three dots `...`. Choose "Go to Dashboard". 
 
 3. Your Kyma Dashboard opens. You are on the "Cluster Details" home page.
 
