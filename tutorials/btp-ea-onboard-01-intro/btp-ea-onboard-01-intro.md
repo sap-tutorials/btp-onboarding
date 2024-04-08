@@ -117,7 +117,7 @@ Free Tier Service Plans provide you an easy way to trial certain SAP services wi
 
 For an overview about Always Free & Free Tier services, visit [SAP Discovery Center Services](https://discovery-center.cloud.sap/viewServices?commercialModel=payg&regions=all&category=freetierservices).
 
-![Overview available BTP licenses](images/2_btp_licenses.png)
+
 
 
 
