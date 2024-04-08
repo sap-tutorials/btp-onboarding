@@ -97,9 +97,13 @@ You can get more information about the existing service plans of a service in th
 
 ### Commercial Models for Enterprise Accounts
 
-BTP offers two different commercial models for BTP enterprise accounts: 
+BTP offers two different commercial models for BTP enterprise accounts **Consumption** and **Subscription**: 
 
-* Consumption-based commercial model in the flavors BTPEA (SAP BTP Enterprise Agreement ), Cloud Platform Enterprise Agreement (CPEA) and Pay-As-You-Go (PAYG)
+* Consumption-based commercial model in the flavours
+   - BTPEA (SAP BTP Enterprise Agreement) – New License introduced as of March 12th 2024, 
+   - Cloud Platform Enterprise Agreement (CPEA) existing customers only and 
+   - Pay-As-You-Go (PAYG)
+
   
 * Subscription-based commercial model. 
 
@@ -107,7 +111,7 @@ For more information on pricing, see [SAP BTP Pricing Options](https://www.sap.c
 
 Some services are **Always Free**, which indicates the service is offering a service plan that comes free of additional charges, as it is already included in your overall SAP BTP contract. 
 
-The consumption-based models Pay-As-You-Go (PAYG) and Cloud Platform Enterprise Agreement (CPEA) offer, in addition, **Free Tier Service Plans** for specific services. 
+TThe consumption-based models Pay-As-You-Go (PAYG) and SAP BTP Enterprise Agreement (BTPEA) / Cloud Platform Enterprise Agreement (CPEA) offer, in addition, **Free Tier Service Plans** for specific services. 
 
 Free Tier Service Plans provide you an easy way to trial certain SAP services within your enterprise account, free of charge to see if they can meet your needs.
 
@@ -124,9 +128,10 @@ With the consumption-based model, your organization purchases an entitlement to 
 
 The consumption-based commercial model is available in the following flavors:
 
-- BTPEA (SAP BTP Enterprise Agreement)
-- CPEA (Cloud Platform Enterprise Agreement) 
-- and Pay-As-You-Go for SAP BTP (based on CPEA).
+- BTPEA (SAP BTP Enterprise Agreement) – new license model from March 12th 2024
+- CPEA (Cloud Platform Enterprise Agreement) - (not on price list after April 15th, 2024)
+- and Pay-As-You-Go for SAP BTP
+
 
 
 **SAP BTP Enterprise Agreement (BTPEA)**
@@ -144,18 +149,20 @@ BTP services can be used when demand arises and be retired when not needed anymo
 - You can top up your cloud credits at any time to prevent overages.
 - You get the new BTP services
 
-BTPEA global accounts cannot consume NEO environments.
+BTPEA global accounts do not support SAP BTP, NEO environment.
+
+Please look at the Discovery Center services for the complete list of supported [services](https://discovery-center.cloud.sap/serviceCatalog?showFilters=true&commercialModel=btpea&provider=all&regions=all).
 
 
-**Cloud Platform Enterprise Agreement (CPEA)**
+**Cloud Platform Enterprise Agreement (CPEA) - (only existing accounts after April 15th, 2024)**
 
 >**Note: The service scope of CPEA will not be extended. All new services will be available with BTPEA.**
 
 Your organization makes a prepaid investment in cloud credits for the contract duration with an annual commitment to consume SAP BTP services.
 
-This model is suitable for customers that have well-established and planned use cases, and who want the flexibility of turning services on and off, and switching between services, without the commitment of being tied to a single service throughout the duration of the contract.
+If you wish to benefit from the latest innovations from SAP, you wish to shift to a BTPEA license please reach out to your SAP Account Executive for more information.
 
-This model has a minimum investment entry, and volume-based discounts are available. Please reach out to your SAP sales representative for more information. 
+Also, please refer to the common FAQ on the new pricing model towards the bottom. 
 
 
 **Pay-As-You-Go for SAP BTP (PAYG)**
@@ -238,7 +245,30 @@ In case the user tries to assign the free tier services to more than one subacco
 If you activate the integration suite services with enterprise_agreement or messages, you will be charged based on the pricing details listed in the [Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/integration-suite?region=all&tab=service_plan).
 
 
+#### Common FAQ on BTPEA and CPEA
 
+1.	Can I have BTPEA and CPEA in one single Global Account?
+
+     Ans: No, however, you may have two Global Accounts for BTPEA and CPEA if you wish. 
+
+2.	Do All services, in CPEA exist in BTPEA?
+
+     Ans: No, BTPEA will not support Neo services and deprecated services. Please refer to the Discovery Center – services section for the support list of services in BTPEA. 
+3.	Does BTPEA include free tier services?
+
+     Ans: Yes, the free tier service will continue to be available with the BTPEA license model for most of the services. 
+
+4.	What if you choose to stay on CPEA? What are the implications?
+
+     Ans: As a customer, you may choose to remain on CPEA (renewal and upsell will be possible) and you may also buy more credits. However, all new innovations or offerings will be added to the BTPEA as the list of available services under CPEA has been frozen. Hence we recommend moving to BTPEA if no geographical limitations. 
+
+5.	Will the CPEA voucher in RISE/GROW be replaced with a BTPEA voucher?
+   
+     Ans: **At this time, the CPEA voucher will continue as is until a new BTPEA voucher is introduced shortly.  
+
+6.	I decided to stay back on CPEA, but I do not see the BTP Services in the Catalog for the CPEA license model. How do I understand/estimate my CPEA pricing and consumption?
+
+     Ans: The Discovery Center – Pricing Estimator tool can help you with the CPEA services pricing and plan your estimations.  (Home / Control Center / My Estimates or link)
 
 
 ### SAP BTP Global Account
