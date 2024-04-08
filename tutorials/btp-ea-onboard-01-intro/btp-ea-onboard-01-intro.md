@@ -100,8 +100,8 @@ You can get more information about the existing service plans of a service in th
 BTP offers two different commercial models for BTP enterprise accounts **Consumption** and **Subscription**: 
 
 * Consumption-based commercial model in the flavours
-   - BTPEA (SAP BTP Enterprise Agreement) – New License introduced as of March 12th 2024, 
-   - Cloud Platform Enterprise Agreement (CPEA) existing customers only and 
+   - BTPEA (SAP BTP Enterprise Agreement) – new License introduced as of April 12th 2024, 
+   - Cloud Platform Enterprise Agreement (CPEA) - for existing CPEA Accounts
    - Pay-As-You-Go (PAYG)
 
   
@@ -128,8 +128,8 @@ With the consumption-based model, your organization purchases an entitlement to 
 
 The consumption-based commercial model is available in the following flavors:
 
-- BTPEA (SAP BTP Enterprise Agreement) – new license model from March 12th 2024
-- CPEA (Cloud Platform Enterprise Agreement) - (not on price list after April 15th, 2024)
+- BTPEA (SAP BTP Enterprise Agreement) – new license model from April 12th 2024
+- CPEA (Cloud Platform Enterprise Agreement) - for existing CPEA Accounts
 - and Pay-As-You-Go for SAP BTP
 
 
