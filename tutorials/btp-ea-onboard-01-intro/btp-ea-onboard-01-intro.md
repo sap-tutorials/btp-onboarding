@@ -109,6 +109,9 @@ BTP offers two different commercial models for BTP enterprise accounts **Consump
 
 For more information on pricing, see [SAP BTP Pricing Options](https://www.sap.com/products/technology-platform/pricing.html#pricing-options)
 
+![Commercial models for SAP BTP](images/2_btp_licenses_btpea.png)
+
+
 Some services are **Always Free**, which indicates the service is offering a service plan that comes free of additional charges, as it is already included in your overall SAP BTP contract. 
 
 TThe consumption-based models Pay-As-You-Go (PAYG) and SAP BTP Enterprise Agreement (BTPEA) / Cloud Platform Enterprise Agreement (CPEA) offer, in addition, **Free Tier Service Plans** for specific services. 
