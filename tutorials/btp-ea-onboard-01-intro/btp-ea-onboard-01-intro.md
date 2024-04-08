@@ -74,7 +74,7 @@ You can explore the SAP BTP use cases on the [SAP home page](https://www.sap.com
 SAP BTP capabilities are delivered as services. Before you utilize a service, you need to be familiar with the service plans which are available for this service to select the right one for your scenario. 
 You can get more information about the existing service plans of a service in the [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog?showFilters=true).
 
- <!-- border -->![BTP Cloud Services Overview](images/1_btp_cloud_services.png)
+ ![BTP Cloud Services Overview](images/1_btp_cloud_services.png)
 
 
 
@@ -99,10 +99,11 @@ You can get more information about the existing service plans of a service in th
 
 BTP offers two different commercial models for BTP enterprise accounts: 
 
-* Consumption-based commercial model in the flavors Cloud Platform Enterprise Agreement (CPEA) and Pay-As-You-Go (PAYG)
+* Consumption-based commercial model in the flavors BTPEA (SAP BTP Enterprise Agreement ), Cloud Platform Enterprise Agreement (CPEA) and Pay-As-You-Go (PAYG)
   
 * Subscription-based commercial model. 
 
+For more information on pricing, see [SAP BTP Pricing Options](https://www.sap.com/products/technology-platform/pricing.html#pricing-options)
 
 Some services are **Always Free**, which indicates the service is offering a service plan that comes free of additional charges, as it is already included in your overall SAP BTP contract. 
 
@@ -110,33 +111,64 @@ The consumption-based models Pay-As-You-Go (PAYG) and Cloud Platform Enterprise 
 
 Free Tier Service Plans provide you an easy way to trial certain SAP services within your enterprise account, free of charge to see if they can meet your needs.
 
- <!-- border -->![Overview available BTP licenses](images/2_btp_licenses.png)
+For an overview about Always Free & Free Tier services, visit [SAP Discovery Center Services](https://discovery-center.cloud.sap/viewServices?commercialModel=payg&regions=all&category=freetierservices).
+
+![Overview available BTP licenses](images/2_btp_licenses.png)
 
 
 
 
 #### Consumption-based commercial model 
 
-Your organization receives access to all current and future services that are eligible for this model. You have complete flexibility to turn services on and off and to switch between services as your business requires throughout the duration of your contract. 
+With the consumption-based model, your organization purchases an entitlement to all current and future SAP BTP services that are eligible for this model. Throughout the duration of your contract, you have complete flexibility to turn services on and off and to switch between services as your business requires.
+
+The consumption-based commercial model is available in the following flavors:
+
+- BTPEA (SAP BTP Enterprise Agreement)
+- CPEA (Cloud Platform Enterprise Agreement) 
+- and Pay-As-You-Go for SAP BTP (based on CPEA).
 
 
-**Pay-As-You-Go for SAP BTP (PAYG)**
+**SAP BTP Enterprise Agreement (BTPEA)**
 
-With PAYG you can start using cloud services in your production environment with no upfront cost, no minimum usage requirements, and no financial commitments. 
-Contract auto-renews every three months with monthly billing. 
-It can be upgraded to a Cloud Platform Enterprise Agreement (CPEA).
+BTPEA is an evolution of the existing Cloud Platform Enterprise Agreement (CPEA) commercial model.
 
-If you want to try out an SAP pay-as-you-go account with free tier service plans, you can sign up at [SAP Store](https://store.sap.com/dcp/en/product/display-9999951781_live_v1) or follow the tutorial [Set Up an SAP BTP Account for Tutorials](https://developers.sap.com/group.btp-setup.html).
+BTP services can be used when demand arises and be retired when not needed anymore.
 
+
+- Your organization makes a prepaid investment in cloud credits for the contract duration with an annual commitment to consume SAP BTP services.
+- This model is suitable for customers that have well-established and planned use cases, and who want the flexibility of turning services on and off, and switching between services, without the commitment of being tied to a single service throughout the duration of the contract.
+- You receive a monthly balance statement that provides information about the usage consumption of each service and the corresponding costs. The total monthly cost is deducted from your cloud credits balance.
+- This model has a minimum investment entry, and volume-based discounts are available.
+- You are billed annually in advance. Any overages are billed in arrears at list price.
+- You can top up your cloud credits at any time to prevent overages.
+- You get the new BTP services
+
+BTPEA global accounts cannot consume NEO environments.
 
 
 **Cloud Platform Enterprise Agreement (CPEA)**
+
+>**Note: The service scope of CPEA will not be extended. All new services will be available with BTPEA.**
 
 Your organization makes a prepaid investment in cloud credits for the contract duration with an annual commitment to consume SAP BTP services.
 
 This model is suitable for customers that have well-established and planned use cases, and who want the flexibility of turning services on and off, and switching between services, without the commitment of being tied to a single service throughout the duration of the contract.
 
 This model has a minimum investment entry, and volume-based discounts are available. Please reach out to your SAP sales representative for more information. 
+
+
+**Pay-As-You-Go for SAP BTP (PAYG)**
+
+With PAYG you can start using cloud services in your production environment with no upfront cost, no minimum usage requirements, and no financial commitments. 
+Contract auto-renews every three months with monthly billing. 
+PAYG is based on the services of Cloud Platform Enterprise Agreement (CPEA).
+
+If you want to try out an SAP pay-as-you-go account with free tier service plans, you can sign up at [SAP Store](https://store.sap.com/dcp/en/product/display-9999951781_live_v1) or follow the tutorial [Set Up an SAP BTP Account for Tutorials](https://developers.sap.com/group.btp-setup.html).
+
+
+
+
 
 <br>
 
@@ -193,14 +225,14 @@ Let us take a look at service assignments from a Global Account.
 Every service listed in the BTP has its charges which are known as “ service plan” and “quota” to understand the number of units and their usage. 
 Taking an example, the image below details some of the free services and a few that are not included as free tiers.
 
- <!-- border -->![Find the Free Tier service plans](images/3_free_tier_service_plans.png)
+![Find the Free Tier service plans](images/3_free_tier_service_plans.png)
 
 With the Integration Suite, we see that the free tier is applicable and we can also see that the assigned quota is 1 which is already consumed by one subaccount. 
 
 In case the user tries to assign the free tier services to more than one subaccount, a clear message is displayed which indicates that the free service is already in use as shown below.
 
 
- <!-- border -->![Available Free Tier service plans](images/4_available_plans_free_tier.png)
+![Available Free Tier service plans](images/4_available_plans_free_tier.png)
 
 
 If you activate the integration suite services with enterprise_agreement or messages, you will be charged based on the pricing details listed in the [Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/integration-suite?region=all&tab=service_plan).
@@ -213,15 +245,19 @@ If you activate the integration suite services with enterprise_agreement or mess
 
 Accounts are structured according to global accounts, subaccounts, and directories.
 
-An global (enterprise) account is the realization of a contract you made with SAP. Global accounts are region- and environment-independent. After successful first login, you will land on your global account home page.
+An global (enterprise) account is the realization of a contract you made with SAP. 
+
+Global accounts are region- and environment-independent. 
+
+After successful first login, you will land on your global account home page.
 
 - A global account is either of the account type **enterprise** or **trial** (a limited single-user account).
 
-- A global account is used to manage **global account members** (typically for managing the global account), **entitlements** and regional **subaccounts.**
+- A global account is used to manage **global account members** (typically for managing the global account), **entitlements** and regional **subaccounts**.
 
 - A global account can contain one or more subaccounts in which you run applications and services.
 
-   <!-- border -->![SAP BTP account model](images/6_btp_account_model.png)
+![SAP BTP account model](images/6_btp_account_model.png)
 
 
 
@@ -237,7 +273,7 @@ The amount of resources you may consume are defined in the **Service Plans** of 
 
 Entitlements are purchased and managed at global account level, from where they’re distributed to subaccounts, which consume them.
 
-Some BTP services need an explicit **"Quota"** for a subaccount, means a certain amount of the available entitlement is distributed to a specific subaccount.
+Some BTP services like Cloud Foundry Runtime need an explicit **"Quota"** for a subaccount, means a certain amount of the available entitlement is distributed to a specific subaccount.
 When you remove quotas from a subaccount, they become available again at the global account level and can be assigned to other subaccounts.
 
 
@@ -259,12 +295,12 @@ For an overview of all available regions, see [Discovery Center](https://discove
 
 Click the small world icon in the filter bar.
 
- <!-- border -->![Discovery Center filter bar](images/6_dc_filter_bar.png)
+![Discovery Center filter bar](images/6_dc_filter_bar.png)
 
 
 As a result, you will see an overview map for Regions and Providers.
 
- <!-- border -->![Discovery Center regions map](images/7_dc_regions_map.png)
+![Discovery Center regions map](images/7_dc_regions_map.png)
 
 
 
@@ -298,7 +334,7 @@ To actually use an environment in a subaccount, you need to enable it by creatin
 
 Available SAP BTP services are listed in the [Discovery Center Service Catalog](https://discovery-center.cloud.sap/serviceCatalog?provider=all&regions=all&showFilters=true). 
 
- <!-- border -->![Browse Discovery Center Services](images/8_browse_dc_services.png)
+![Browse Discovery Center Services](images/8_browse_dc_services.png)
 
 
 
@@ -311,7 +347,7 @@ If you select a service you can find under the tab **Pricing** information about
 
 
 
- <!-- border -->![Pricing of Discovery Center Services](images/8_dc_services_pricing.png)
+![Pricing of Discovery Center Services](images/8_dc_services_pricing.png)
 
 
 
