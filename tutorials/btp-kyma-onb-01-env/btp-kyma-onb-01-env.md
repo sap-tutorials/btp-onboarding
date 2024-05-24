@@ -4,7 +4,7 @@ author_profile: https://github.com/abbi-gaurav
 keywords: Setup SAP BTP, Kyma runtime
 auto_validation: true
 primary_tag: software-product>SAP BTP, Kyma runtime
-tags: [ tutorial>beginner, tutorial>tutorial, topic>cloud]
+tags: [ tutorial>beginner, topic>cloud ]
 time: 15
 parser: v2
 ---
@@ -25,7 +25,7 @@ With this cloud-native solution, developers can extend SAP solutions with server
 
 ## Prerequisites
 
-You need either a BTP Enterprise Account with unused Kyma entitlement, or a BTP Trial Account.
+You need either a BTP Enterprise Account with unused Kyma entitlement or a BTP Trial Account.
 
 
 ## Intro
@@ -37,7 +37,7 @@ SAP BTP, Kyma runtime provides a fully managed Kubernetes runtime based on the o
 
 You can use an existing subaccount of your BTP Global Enterprise Account and enable Kyma, or you create a new subaccount for this tutorial.
 
-In this step of the tutorial you create a new subaccount for your Kyma environment.
+In this step of the tutorial, you create a new subaccount for your Kyma environment.
 
 >Note: In a BTP **Trial Account**, a subaccount with Kyma entitlement is already preconfigured. You could create a 2nd Subaccount in Trial also, but you will not have unused entitlements for Kyma. You need to delete the Kyma entitlement in the preconfigured Subaccount first.
 
@@ -79,7 +79,7 @@ In this step of the tutorial you create a new subaccount for your Kyma environme
 
 If you use a BTP Trial Account, you are already entitled to use the **Kyma runtime** Service. 
 
-If you use a BTP Enterprise Account, you are not yet entitled to for the **Kyma runtime** Service. 
+If you use a BTP Enterprise Account, you are not yet entitled to the **Kyma runtime** Service. 
 
 
 #### Procedure
@@ -88,7 +88,7 @@ If you use a BTP Enterprise Account, you are not yet entitled to for the **Kyma 
 
     Select as Entity your subaccount (e.g. the just created subaccount_for_kyma).
 
-    Put **Kyma** into the search field. In a new subaccount you will see no existing entitlements.
+    Put **Kyma** into the search field. In a new subaccount, you will see no existing entitlements.
 
     Press button **Configure Entitlements**.
 
@@ -108,7 +108,7 @@ If you use a BTP Enterprise Account, you are not yet entitled to for the **Kyma 
 
     ![Add Service Kyma Plan](images/2_3_kyma_addsplan_1.png)
 
-4. Increase optionally your "Subaccount Assignment". For training keep "1". 
+4. Increase your "Subaccount Assignment optionally." For training keep "1". 
 
     Press **Save**.
 
@@ -147,7 +147,7 @@ Once your subaccount is entitled to use Kyma Runtime, you can "Enable Kyma" in y
 
 4. Kyma Wizard Step 2: Simply keep the default values and leave the empty fields empty.
    
-    ![Step 2 of teh Kyma Wizard](images/2_8_kymasub_enable_3.png)
+    ![Step 2 of the Kyma Wizard](images/2_8_kymasub_enable_3.png)
 
 5. Kyma Wizard Step 3: Review the instance details.
 
@@ -175,7 +175,7 @@ Once your subaccount is entitled to use Kyma Runtime, you can "Enable Kyma" in y
 
     Scan the **QR Code**. A password to access Kyma will be created. Enter this password:
  
-    ![Enter you authenticator app password](images/2_10_kyma_2fa.png)
+    ![Enter your authenticator app password](images/2_10_kyma_2fa.png)
 
 9. Congratulations, you have entered the Kyma dashboard! 
 
@@ -185,12 +185,12 @@ Once your subaccount is entitled to use Kyma Runtime, you can "Enable Kyma" in y
 
     Istio is an open-source service mesh that provides a uniform way to manage, connect, and secure microservices.
 
-    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the application of API Gateway’s configuration and handles resource reconciliation.
+    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application’s configuration and handles resource reconciliation.
 
 
 ### Enable SAP BTP Kyma Modules
 
-To use additional Kyma modules, you must enable a module first. Use Kyma dashboard or Kyma CLI to do that. If you don't need the module anymore, disable it to save resources.
+To use additional Kyma modules, you must enable a module first. You can do that using the Kyma dashboard or Kyma CLI. If you no longer need the module, disable it to save resources.
 
 In this tutorial, you use the default release channel "regular channel". You can also choose "Fast Channel". For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
 
@@ -215,13 +215,13 @@ If you want to enable additional modules, follow this procedure:
     ![Edit Kyma module](images/23_2_addmodule_edit.png)
 
 
-5. Add the serverless Kyma module by selecting it. You will need it, when you create a Kyma function.
+5. Select the serverless Kyma module and add it. You will need it when you create a Kyma function.
 
     Click "Update".
 
     ![Add Serverless module](images/23_3_addserverless.png)
 
-6. The module will be added. You can see the progress in your Cluster Details home page.
+6. The module will be added. You can see the progress on your Cluster Details home page.
 
     ![The module will be activated](images/23_4_addmodule_unknown.png)
 

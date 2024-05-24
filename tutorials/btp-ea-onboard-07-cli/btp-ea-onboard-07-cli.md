@@ -4,7 +4,7 @@ author_profile: https://github.com/Gituserneumann
 keywords: About BTP Business Technology Platform
 auto_validation: true
 primary_tag: software-product>sap-business-technology-platform
-tags: [ tutorial>beginner, tutorial>tutorial, topic>cloud ]
+tags: [ tutorial>beginner, topic>cloud ]
 time: 15
 parser: v2
 ---
@@ -15,9 +15,9 @@ parser: v2
 # Account Administration Using the SAP BTP Command Line Interface
 
 The SAP BTP command-line interface (BTP CLI) can be used for all account administration tasks, such as creating or updating subaccounts, authorization management, and working with service brokers and platforms. 
-It is an alternative to the SAP BTP cockpit for all users who prefer to work in a terminal or want to automate operations using scripts.
+It is an alternative to the SAP BTP cockpit for users who prefer to work in a terminal or automate operations using scripts.
 
->Note: btp CLI is the command line tool of the BTP Platform. It does not replace other CLIs, like [Cloud Foundry CLI](https://tools.hana.ondemand.com/#cloud-btpcli), which you need for the Cloud Foundry runtime, or the [Kyma CLI](https://kyma-project.io/docs/kyma/latest/04-operation-guides/operations/01-install-kyma-CLI) for Kyma runtime or Kubectl. 
+>Note: "btp CLI" is the BTP Platform's command-line tool. It does not replace other CLIs, like the [Cloud Foundry CLI](https://tools.hana.ondemand.com/#cloud-btpcli), which you need for the Cloud Foundry runtime, or the [Kyma CLI](https://kyma-project.io/docs/kyma/latest/04-operation-guides/operations/01-install-kyma-CLI) for the Kyma runtime or Kubectl. 
 
 
 
@@ -50,7 +50,7 @@ To use the SAP BTP command line interface (btp CLI), you need to download the cl
    
     Search for "btp CLI" in [SAP Development Tools home page](https://tools.hana.ondemand.com/#cloud-btpcli)
    
-    Or download the [latest windows archive](https://tools.hana.ondemand.com/additional/btp-cli-windows-amd64-latest.tar.gz) directly.
+    Or download the [latest Windows archive](https://tools.hana.ondemand.com/additional/btp-cli-windows-amd64-latest.tar.gz) directly.
    
 2. Extract the archive using tar. Get details of tar with `tar --help`. 
 
@@ -64,7 +64,7 @@ To use the SAP BTP command line interface (btp CLI), you need to download the cl
     -f: Filename.
     ```
  
- 3. Add btp CLI to your system **environment variables** (e.g. PATH in windows) or work in the directory of the btp CLI.
+ 3. Add the btp CLI to your system environment variables (e.g., PATH in Windows) or work in the btp CLI's directory.
 
 
 **For more information, see**
@@ -115,7 +115,7 @@ On Windows, open your `CMD` or Powershell terminal. Type
         disable autocomplete  Disable command autocompletion
 
     Options:
-       --config   Specify location of configuration file
+       --config   Specify the location of the configuration file
        --format   Change output format (valid value: json)
        --help     Display help
        --info     Show version and current context
@@ -124,7 +124,7 @@ On Windows, open your `CMD` or Powershell terminal. Type
     ``` 
 
 
-3. `btp --info`. Gives you some informations about fundamental configurations, like:
+3. `btp --info`. Gives you some information about fundamental configurations, like:
 
     ```
     Usage: btp [OPTIONS] ACTION GROUP/OBJECT PARAMS
@@ -177,22 +177,22 @@ When you log in to your global account with the btp CLI, a token is created and 
 
     We stored your configuration file at: C:\Users\<username>\AppData\Roaming\SAP\btp\config.json
     Microsoft Windows: C:\Users\<username>\AppData\Roaming\SAP\btp\config.json
-    To change this location, use the --config option or the environmnet variable
+    To change this location, use the --config option or the environment variable
     ```
 
 
 
 
-#### Login with Single Sign On
+#### Login with Single Sign-On
 
 
 1. Type `btp login --sso`.
 
-2. Enter "CLI server URL". Use pre-configured URL [https://cpcli.cf.eu10.hana.ondemand.com] or enter your own.
+2. Enter "CLI server URL". Use a pre-configured URL [https://cpcli.cf.eu10.hana.ondemand.com] or enter your own.
 
-3. A browser popup windows will open. Confirm login.
+3. A browser popup window will open. Confirm login.
 
-    <!-- border -->![](images/6_1_btp_login_sso.png)
+    ![](images/6_1_btp_login_sso.png)
 
 4. The result is for example (in case you have 3 Global Accounts):
 
@@ -217,7 +217,7 @@ When you log in to your global account with the btp CLI, a token is created and 
 
 ### Change your btp target
 
-Commands are executed in the **target**, unless specified otherwise using a parameter. To change the target, use `btp target`. <br>
+Commands are executed in the **target specified otherwise using a parameter. To change the target, use `btp target`. <br>
 In this example you choosed as target "GlobalAccount_A". <br>
 If you want to change your target, type
 
@@ -226,7 +226,7 @@ If you want to change your target, type
 2. the result is for example:
 
     ```
-    Choose subaccount or directory:
+    Choose a subaccount or directory:
       [..]  Switch Global Accounts
        [.]  GlobalAccount_A (global account)
        [1]  └─  subaccounttest (subaccount)
@@ -258,13 +258,13 @@ This terminates your active logout session and ensures that all user-specific da
 2. Check existing subaccounts of your global account. Type `btp get accounts/global-account --show-hierarchy`.
 3. Get help for btp create command. Type `btp --help create`
 4. Optional, get detailed help. Type `btp --help create accounts/subaccount`
-5. Get help about the available regions. Type `btp list accounts/available-region`.
+5. Get help with the available regions. Type `btp list accounts/available-region`.
 
-6. Now as you have the required infos, create the subaccount. 
+6. Now that you have the required info, create the subaccount. 
 
     For example, choose **subaccounttest** as display-name and **eu10** as region (this will be Frankfurt). 
 
-    As subdomain, you may choose **mysubdomain12345**.Must be unique within the defined region. 
+    As a subdomain, you may choose **mysubdomain12345**.Must be unique within the defined region. 
    
     `btp create accounts/subaccount --display-name subaccounttest --region eu10 --subdomain mysubdomain12345`
 
@@ -294,13 +294,13 @@ This terminates your active logout session and ensures that all user-specific da
   
 8. Check your subaccounts. 
 
-    In terminal, type: `btp list accounts/subaccount`
+    In the terminal, type: `btp list accounts/subaccount`
 
     It will list the subaccounts in your global account.
    
-9. Open your global account in BTP Cockpit an check your new subaccount:
+9. Open your global account in BTP Cockpit and check your new subaccount:
 
-    <!-- border -->![](images/6_9_btp_newsub.png)
+    ![](images/6_9_btp_newsub.png)
 
 
 

@@ -24,20 +24,20 @@ parser: v2
 
 ## Intro
 
-The mission "Get Started with SAP BTP Enterprise Accounts" is designed for **global account administrators** and **IT contacts** who received a new SAP BTP **Enterprise Account**. 
+The mission "Get Started with SAP BTP Enterprise Accounts" is designed for **Global Account administrators** and **IT contacts** who received a new SAP BTP **Enterprise Account**. 
 
-This tutorial gives an introduction to the basic concepts of SAP BTP. If you want to jump-start in the BTP cockpit, proceed to the next tutorial.
+This tutorial introduces the basic concepts of SAP BTP. If you want to jump-start in the BTP cockpit, proceed to the next tutorial.
 
 
 
 
 ### About SAP BTP Enterprise Accounts
 
-SAP BTP provides different types of global accounts, "enterprise" and "trial". The type you choose determines pricing, conditions of use, resources, available services, and hosts.
+SAP BTP provides two different types of global accounts: "Enterprise" and "Trial." The type you choose determines pricing, conditions of use, resources, available services, and hosts.
 
 SAP BTP Enterprise accounts are usually associated with SAP customer or partner contracts and contain their purchased entitlements to platform resources and services. However, it's also possible to create an [enterprise account](https://help.sap.com/docs/btp/sap-business-technology-platform/enterprise-accounts?locale=en-US) for personal exploration.
 
-In case you do not have an Enterprise Account and if you wish to explore or buy an Enterprise Account, you may refer to a [pay-as-you-go license](https://www.sap.com/products/technology-platform/trial.html) and use [Free Tier Service Plans](https://discovery-center.cloud.sap/viewServices?provider=all&regions=all&category=freetierservices). You can learn more about the "Free Tier model" later in this mission.
+If you do not have an Enterprise Account and wish to explore or buy one, you may refer to a [pay-as-you-go license](https://www.sap.com/products/technology-platform/trial.html) and use [Free Tier Service Plans](https://discovery-center.cloud.sap/viewServices?provider=all&regions=all&category=freetierservices). You can learn more about the "Free Tier model" later in this mission.
 
 
 You can also order a SAP BTP Pay-As-You-Go license in [SAP Store](https://store.sap.com/dcp/en/product/display-9999951781_live_v1/sap-business-technology-platform)
@@ -71,7 +71,7 @@ Furthermore, you can also [schedule a 1:1 discussion](https://sapxm.qualtrics.co
 SAP Business Technology Platform Use Cases are real-life use cases, that show how SAP BTP can help meet your specific business needs.
 You can explore the SAP BTP use cases on the [SAP home page](https://www.sap.com/products/technology-platform/use-cases.html?sort=title_asc).
 
-SAP BTP capabilities are delivered as services. Before you utilize a service, you need to be familiar with the service plans that are available for this service to select the right one for your scenario. 
+SAP BTP capabilities are delivered as services. Before you utilize a service, you need to be familiar with the service plans available to select the right one for your scenario. 
 You can get more information about the existing service plans of a service in the [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog?showFilters=true).
 
  ![BTP Cloud Services Overview](images/1_btp_cloud_services.png)
@@ -112,11 +112,11 @@ For more information on pricing, see [SAP BTP Pricing Options](https://www.sap.c
 ![Commercial models for SAP BTP](images/2_btp_licenses_btpea.png)
 
 
-Some services are **Always Free**, which indicates the service is offering a service plan that comes free of additional charges, as it is already included in your overall SAP BTP contract. 
+Some services are **Always Free**, which indicates that the service offers a service plan that is free of additional charges, as it is already included in your overall SAP BTP contract. 
 
 TThe consumption-based models Pay-As-You-Go (PAYG) and SAP BTP Enterprise Agreement (BTPEA) / Cloud Platform Enterprise Agreement (CPEA) offer, in addition, **Free Tier Service Plans** for specific services. 
 
-Free Tier Service Plans provide you with an easy way to trial certain SAP services within your enterprise account, free of charge to see if they can meet your needs.
+Free Tier Service Plans allow you to trial certain SAP services within your enterprise account free of charge to see if they can meet your needs.
 
 For an overview of Always Free & Free Tier services, visit [SAP Discovery Center Services](https://discovery-center.cloud.sap/viewServices?commercialModel=payg&regions=all&category=freetierservices).
 
@@ -143,9 +143,8 @@ BTPEA is an evolution of the existing Cloud Platform Enterprise Agreement (CPEA)
 
 BTP services can be used when demand arises and be retired when not needed anymore.
 
-
-- Your organization makes a prepaid investment in cloud credits for the contract duration with an annual commitment to consume SAP BTP services.
-- This model is suitable for customers who have well-established and planned use cases, and who want the flexibility of turning services on and off and switching between services, without the commitment of being tied to a single service throughout the duration of the contract.
+- Your organization makes a prepaid investment in cloud credits for the contract duration and makes an annual commitment to consume SAP BTP services.
+- This model is suitable for customers with well-established and planned use cases who want the flexibility of turning services on and off and switching between services without the commitment of being tied to a single service throughout the duration of the contract.
 - You receive a monthly balance statement that provides information about the usage consumption of each service and the corresponding costs. The total monthly cost is deducted from your cloud credits balance.
 - This model has a minimum investment entry, and volume-based discounts are available.
 - You are billed annually in advance. Any overages are billed in arrears at the list price.
@@ -163,7 +162,7 @@ Please look at the Discovery Center services for the complete list of supported 
 
 Your organization makes a prepaid investment in cloud credits for the contract duration with an annual commitment to consume SAP BTP services.
 
-If you wish to benefit from the latest innovations from SAP, you wish to shift to a BTPEA license please reach out to your SAP Account Executive for more information.
+If you wish to benefit from SAP's latest innovations and shift to a BTPEA license, please reach out to your SAP Account Executive for more information.
 
 Also, please refer to the common FAQ on the new pricing model towards the bottom. 
 
@@ -208,7 +207,7 @@ Visit the [SAP Developer Center](https://developers.sap.com/) or the [BTP Trial 
 
 This is one of the most important topics and we request your attention while activating/using your free tier services.
 
-Free tier services are only available on consumption licenses i.e. PAYG or CPEA. As a customer, if you have opted for any of the license models you are eligible to use the free tier and the options show up in your BTP global account.
+Free tier services are only available on consumption licenses, i.e., PAYG or CPEA. As a customer, if you have opted for any of the license models you are eligible to use the free tier and the options show up in your BTP global account.
 
 Free tier services allow you to try out a growing selection of SAP BTP services without being charged up to specified limits for each service. 
 For more information about the free tier service plans and their capacity limits, see [Discovery Center](https://discovery-center.cloud.sap/viewServices?category=freetierservices&regions=all&provider=all) Free Tier Services.
@@ -221,7 +220,7 @@ For more information about the free tier service plans and their capacity limits
 
 > **Note:** Not all services are available with a free service plan and not all free service plans are available in all regions and with all providers. <br>
 
-> Be careful while you activate services with all the scenarios. Do not activate any services in Enterprise Accounts if you **strictly want to avoid costs** for the services and you are not sure if the service and its service plan are free. In this scenario, consider using BTP Trial Account first, to become familiar with BTP service configuration.
+> Be careful while activating services in all scenarios. Do not activate any services in Enterprise Accounts if you **strictly want to avoid costs** for the services and you are not sure if the service and its service plan are free. In this scenario, consider using a BTP Trial Account first to become familiar with BTP service configuration.
 
 <br>
 
@@ -232,14 +231,14 @@ This unlimited access can help you to spin up all the services as required for y
 
 
 Let us take a look at service assignments from a Global Account. 
-Every service listed in the BTP has its charges which are known as “ service plan” and “quota” to understand the number of units and their usage. 
+Every service listed in the BTP has its charges, which are known as “ service plan” and “quota,” to understand the number of units and their usage. 
 Taking an example, the image below details some of the free services and a few that are not included as free tiers.
 
 ![Find the Free Tier service plans](images/3_free_tier_service_plans.png)
 
 With the Integration Suite, we see that the free tier is applicable and we can also see that the assigned quota is 1 which is already consumed by one subaccount. 
 
-In case the user tries to assign the free tier services to more than one subaccount, a clear message is displayed which indicates that the free service is already in use as shown below.
+If the user tries to assign the free tier services to more than one subaccount, a clear message is displayed indicating that the free service is already in use, as shown below.
 
 
 ![Available Free Tier service plans](images/4_available_plans_free_tier.png)
@@ -256,20 +255,23 @@ If you activate the integration suite services with enterprise_agreement or mess
 
 2.	Do All services, in CPEA exist in BTPEA?
 
-     Ans: No, BTPEA will not support Neo services and deprecated services. Please refer to the Discovery Center – services section for the support list of services in BTPEA. 
-3.	Does BTPEA include free tier services?
+     Ans: No, BTPEA will not support Neo services and deprecated services. Please refer to the Discovery Center – services section for the support list of services in BTPEA.
+  	
+4.	Does BTPEA include free tier services?
 
      Ans: Yes, the free tier service will continue to be available with the BTPEA license model for most of the services. 
 
-4.	What if you choose to stay on CPEA? What are the implications?
+5.	What if you choose to stay on CPEA? What are the implications?
 
-     Ans: As a customer, you may choose to remain on CPEA (renewal and upsell will be possible) and you may also buy more credits. However, all new innovations or offerings will be added to the BTPEA as the list of available services under CPEA has been frozen. Hence we recommend moving to BTPEA if no geographical limitations. 
+     Ans: As a customer, you may choose to remain on CPEA (renewal and upsell will be possible) and buy more credits. 
+     However, all new innovations or offerings will be added to the BTPEA as the list of available services under CPEA has been frozen.
+  	 Hence, we recommend moving to BTPEA if there are no geographical limitations. 
 
-5.	Will the CPEA voucher in RISE/GROW be replaced with a BTPEA voucher?
+6.	Will the CPEA voucher in RISE/GROW be replaced with a BTPEA voucher?
    
      Ans: **At this time, the CPEA voucher will continue as is until a new BTPEA voucher is introduced shortly.  
 
-6.	I decided to stay back on CPEA, but I do not see the BTP Services in the Catalog for the CPEA license model. How do I understand/estimate my CPEA pricing and consumption?
+7.	I decided to stay back on CPEA, but I do not see the BTP Services in the Catalog for the CPEA license model. How do I understand/estimate my CPEA pricing and consumption?
 
      Ans: The Discovery Center – Pricing Estimator tool can help you with the CPEA services pricing and plan your estimations.  (Home / Control Center / My Estimates or link)
 
@@ -278,11 +280,11 @@ If you activate the integration suite services with enterprise_agreement or mess
 
 Accounts are structured according to global accounts, subaccounts, and directories.
 
-An global (enterprise) account is the realization of a contract you made with SAP. 
+A global (enterprise) account is the realization of a contract you made with SAP. 
 
 Global accounts are region- and environment-independent. 
 
-After successful first login, you will land on your global account home page.
+After a successful first login, you will land on your global account home page.
 
 - A global account is either of the account type **enterprise** or **trial** (a limited single-user account).
 
@@ -302,11 +304,11 @@ For further information, see [SAP Help - Account Model](https://help.sap.com/doc
 
 When you purchase an enterprise account, you’re [entitled](https://help.sap.com/docs/btp/sap-business-technology-platform/entitlements-and-quotas?locale=en-US) to use a specific set of resources, such as the amount of memory that can be allocated to your applications. 
 
-The amount of resources you may consume are defined in the **Service Plans** of a BTP service. For example, [SAP BTP, Cloud Foundry Runtime](https://discovery-center.cloud.sap/serviceCatalog/cloud-foundry-runtime?region=all&tab=service_plan) offers in the commercial model CPEA the service plan "**Free**" with the limited resource of 4 GB memory to consume. The service plan "**Standard**" let you choose the amount of memory you want to consume.
+The amount of resources you may consume is defined in the **Service Plans** of a BTP service. For example, [SAP BTP, Cloud Foundry Runtime](https://discovery-center.cloud.sap/serviceCatalog/cloud-foundry-runtime?region=all&tab=service_plan) offers in the commercial model CPEA the service plan "**Free**" with the limited resource of 4 GB memory to consume. The service plan "**Standard**" let you choose the amount of memory you want to consume.
 
-Entitlements are purchased and managed at global account level, from where they’re distributed to subaccounts, which consume them.
+Entitlements are purchased and managed at the global account level, from where they’re distributed to subaccounts, which consume them.
 
-Some BTP services like Cloud Foundry Runtime need an explicit **"Quota"** for a subaccount, means a certain amount of the available entitlement is distributed to a specific subaccount.
+Some BTP services, like Cloud Foundry Runtime, need an explicit **"Quota"** for a subaccount, which means a certain amount of the available entitlement is distributed to a specific subaccount.
 When you remove quotas from a subaccount, they become available again at the global account level and can be assigned to other subaccounts.
 
 
@@ -316,7 +318,7 @@ When you remove quotas from a subaccount, they become available again at the glo
 
 A global account can contain one or more subaccounts in which you deploy applications, use services, and manage your subscriptions. Subaccounts in a global account are independent from each other.
 
-The entitlements and quotas that have been purchased for a global account have to be assigned to the individual subaccounts.
+The entitlements and quotas purchased for a global account must be assigned to the individual subaccounts.
 
 Each subaccount is associated with one **region** and one **provider** running in that region. Each region represents a geographical location (for example, Europe, US East) where applications, data, or services are hosted.
 
@@ -354,7 +356,7 @@ To actually use an environment in a subaccount, you need to enable it by creatin
 
 
 
-**Note:** Not all Services and Applications or Environments are available in all Regions and on all Providers. Different Providers, Environments and Regions may have a different set of available services.
+**Note:** Not all Services, Applications, or Environments are available in all Regions and on all Providers. Different Providers, Environments, and Regions may have a different set of available services.
 
 
 
@@ -389,5 +391,5 @@ If you select a service you can find under the tab **Pricing** information about
 Important to note, that you also have an option to add all the services to the [estimator tool](https://discovery-center.cloud.sap/estimator/?commercialModel=cpea) to get a glimpse of the overall charges of the services that you may use for your projects. 
 The charges/prices are applicable for every service that is activated in your global account/subaccounts.
 
-You can access the Cost Estimator with the small calculator icon in SAP Discovery Center top-level bar.
+You can access the Cost Estimator with the small calculator icon in the SAP Discovery Center top-level bar.
 

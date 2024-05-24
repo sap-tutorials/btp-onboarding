@@ -28,7 +28,7 @@ You can use an existing subaccount or create a new one.
 
 2. From your global account, choose `Create` --> **Subaccount**.
 
-    <!-- border -->![](images/7_am_1_createsub.png)
+    ![](images/7_am_1_createsub.png)
 
 3. A popup window opens. Provide the following entries:
 
@@ -41,9 +41,9 @@ You can use an existing subaccount or create a new one.
     
     Do not check "Used for production" in Advanced Settings   
      
-    The subdomain will become part of the URL for accessing applications that you subscribe to from this subaccount. You can choose any string of your choice, containing only letters, digits and hyphens.
+    The subdomain will become part of the URL for accessing applications that you subscribe to from this subaccount. You can choose any string of your choice containing only letters, digits, and hyphens.
 
-    <!-- border -->![](images/7_am_2_createsub.png)
+    ![](images/7_am_2_createsub.png)
 
 4. Choose `Create`.
 
@@ -56,7 +56,7 @@ You can use an existing subaccount or create a new one.
 
 2. Select Cloud Foundry Environment in the tabbed navigation and choose "Enable Cloud Foundry".
 
-    <!-- border -->![Enable Cloud Foundry](images/7_am_3_enablecf.png)
+    ![Enable Cloud Foundry](images/7_am_3_enablecf.png)
 
 3. Keep the pre-configured entries:
 
@@ -73,15 +73,15 @@ You can use an existing subaccount or create a new one.
 
  ### Create a DEV Space
 
- If you created a new Cloud Foundry Environment, the **Spaces** will be empty. You need at least one.
+ If you create a new Cloud Foundry Environment, the **Spaces** will be empty. You need at least one.
 
- 1. Choose button `Create Space` 
+ 1. Choose the button `Create Space` 
 
  2. Provide a Space Name, for example: **dev** 
 
  3. Keep the space roles.
 
-    <!-- border -->![Select Space Roles](images/7_am_4_spaces.png)
+    ![Select Space Roles](images/7_am_4_spaces.png)
 
  4. Choose `Create`.
 
@@ -94,7 +94,7 @@ You can use an existing subaccount or create a new one.
 
 If you are working in an enterprise account, you need to add quotas in your subaccount to the services you are entitled to in your Global Account.
 
-Afterwards they appear in the **Service Marketplace** of your **subaccount** and you can use the services in your subaccount by subscribing to them.
+Afterward, they appear in the Service Marketplace of your subaccount, and you can use the services in your subaccount by subscribing to them.
 
 1. Go to your global account.
 
@@ -102,7 +102,7 @@ Afterwards they appear in the **Service Marketplace** of your **subaccount** and
 
 3. Select the subaccount for the ABAP environment and choose `Select`.
 
-    <!-- border -->![](images/7_am_5_quota.png)
+    ![](images/7_am_5_quota.png)
 
 4. Choose `Configure Entitlements`.
 
@@ -112,11 +112,11 @@ Afterwards they appear in the **Service Marketplace** of your **subaccount** and
     - For the ABAP environment entitlement, select the plans abap_compute_unit, standard, and hana_compute_unit.
     - Choose `Add 3 Service Plans` (or continue with Web Access for ABAP).
 
-       <!-- border -->![](images/7_am_6_splans.png)
+    ![](images/7_am_6_splans.png)
 
 6. Choose `Save`. 
 
-    <!-- border -->![](images/7_am_8_quotasave.png)
+    ![](images/7_am_8_quotasave.png)
 
 
 
@@ -136,7 +136,7 @@ The Web Access for ABAP  is required to access the SAP Fiori launchpad for the a
     - For the Web Access for ABAP entitlement, select the plan default (Application).
     - Choose `Add 1 Service Plan` (or continue with Cloud Foundry Runtime).
 
-    <!-- border -->![](images/7_am_7_splans_web.png)
+    ![](images/7_am_7_splans_web.png)
 
 7. Choose `Save`. 
 
@@ -168,14 +168,14 @@ Create a service instance for the ABAP environment from the Service Marketplace.
    
     You see a list of all services that are available to you.
 
-    <!-- border -->![](images/7_am_9_marketplace.png)
+    ![](images/7_am_9_marketplace.png)
 
 3. Choose ABAP environment.
 4. Choose Create.
    
     A wizard opens that helps you create your instance.
 
-    <!-- border -->![](images/7_am_10_create1.png)
+    ![](images/7_am_10_create1.png)
 
 5. Select the standard service plan.
 6. Choose Cloud Foundry as your runtime environment.
@@ -187,41 +187,41 @@ Create a service instance for the ABAP environment from the Service Marketplace.
      You use the default form in this tutorial.
 
      - Admin Email Address: take yours.
-     - Development System checkbox: Is checked by default. Keep it in training environment.
+     - Development System checkbox: This is checked by default. Keep it in a training environment.
      - ABAP system ID: Must consist of exactly three alphanumeric characters
      - ABAP runtime size: Minimum 1 
      - HANA memory size: Minimum 2 (4 recommended)
 
      Make sure that you don't choose more compute units than you have assigned to your subaccount for the ABAP environment
 
-     <!-- border -->![](images/7_am_11_create2.png)
+     ![](images/7_am_11_create2.png)
 
 
 10. Choose Next to review and verify your instance details.
 
-     <!-- border -->![](images/7_am_12_create3.png)
+     ![](images/7_am_12_create3.png)
 
 11. Choose Create.
 
      The ABAP environment instance is being set up, which might take a while. 
 
-     Wait for an email that is sent when the setup is completed and the system up and running. 
+     Wait for an email that is sent when the setup is completed and the system is up and running. 
 
-     <!-- border -->![](images/7_am_13_create4.png)
+     ![](images/7_am_13_create4.png)
 
 12. Click **Instances and Subsciptions** to see the progress.
 
-     <!-- border -->![](images/7_am_14_create5.png)
+     ![](images/7_am_14_create5.png)
 
 13. Once done (after a while), click your **instance name**, in this case **default_abap**.
     
      Note: Subscribed **Applications** is still empty.
     
-     <!-- border -->![](images/7_am_15_default.png)
+     ![](images/7_am_15_default.png)
 
 14. You will receive an error message, because you did not yet subscribe to the ABAP Web Access.
 
-     <!-- border -->![](images/7_am_16_webaccessfail.png)
+     ![](images/7_am_16_webaccessfail.png)
 
  
 
@@ -231,19 +231,19 @@ This subscription is required to access the launchpad for the ABAP administrator
 
 **Procedure**
 
-1. Log on to the SAP BTP cockpit in the Cloud Foundry subaccount in which your un ABAP.
+1. Log on to the SAP BTP cockpit in the Cloud Foundry subaccount in which you run ABAP.
 2. In the navigation area, choose **Services --> Service Marketplace**.
 3. Choose the SaaS application tile Web access for ABAP.
 4. Choose `Create`.
-5. A popup windows opens. Keep the defaults. Choose Create.
+5. A popup window opens. Keep the defaults. Choose Create.
    
-    <!-- border -->![](images/7_am_17_webaccess.png)
+    ![](images/7_am_17_webaccess.png)
 
 6. Wait for the subscription to be provisioned. Navigate to **Instances and Subscriptions**.
 
     A new subscription for "Web access for ABAP" has been created. Click on it. You just get a success message.
 
-    <!-- border -->![](images/7_am_18_webaccess2.png)
+    ![](images/7_am_18_webaccess2.png)
 
 7. Scroll down and click your instance **default_abap** again. 
 
@@ -251,7 +251,7 @@ This subscription is required to access the launchpad for the ABAP administrator
 
     Using the ABAP administrator launchpad is part of advanced ABAP tutorials.
 
-    <!-- border -->![](images/7_am_19_webaccess3.png)
+    ![](images/7_am_19_webaccess3.png)
 
 
 Congratulations! You have succesfully setup the ABAP Environment manually. 
