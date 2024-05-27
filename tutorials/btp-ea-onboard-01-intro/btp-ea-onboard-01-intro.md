@@ -2,7 +2,6 @@
 author_name: Nagesh Caparthy, Oliver Stiefbold
 author_profile: https://github.com/nagesh-caparthy
 keywords: BTP Enterprise Account Onboarding
-auto_validation: true
 primary_tag: software-product>sap-business-technology-platform
 tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
 time: 15
