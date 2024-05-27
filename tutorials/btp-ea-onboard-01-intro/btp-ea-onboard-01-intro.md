@@ -4,7 +4,6 @@ author_profile: https://github.com/nagesh-caparthy
 keywords: BTP Enterprise Account Onboarding
 auto_validation: true
 primary_tag: software-product>sap-business-technology-platform
-tags: [ tutorial>beginner, tutorial>tutorial, topic>cloud ]
 time: 15
 parser: v2
 ---
