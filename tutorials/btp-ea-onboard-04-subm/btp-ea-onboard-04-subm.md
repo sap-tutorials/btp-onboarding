@@ -1,7 +1,7 @@
 ---
 author_name: Oliver Stiefbold
 keywords: About BTP Business Technology Platform
-auto_validation: true
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
 primary_tag: software-product>sap-business-technology-platform
 time: 30
 parser: v2
