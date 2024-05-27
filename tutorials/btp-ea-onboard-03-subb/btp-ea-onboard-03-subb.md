@@ -2,7 +2,7 @@
 author_name: Nagesh Caparthy
 author_profile: https://github.com/nagesh-caparthy
 keywords: About BTP Business Technology Platform
-auto_validation: true
+tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
 primary_tag: software-product>sap-business-technology-platform
 time: 30
 parser: v2
