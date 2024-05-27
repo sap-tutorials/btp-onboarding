@@ -4,7 +4,6 @@ author_profile: https://github.com/Gituserneumann
 keywords: About BTP Business Technology Platform
 auto_validation: true
 primary_tag: software-product>sap-business-technology-platform
-tags: [ tutorial>beginner, topic>cloud ]
 time: 15
 parser: v2
 ---
