@@ -4,7 +4,6 @@ author_profile: https://github.com/abbi-gaurav
 keywords: Setup SAP BTP, Kyma runtime
 auto_validation: true
 primary_tag: software-product>SAP BTP, Kyma runtime
-tags: [ tutorial>beginner, topic>cloud ]
 time: 15
 parser: v2
 ---
