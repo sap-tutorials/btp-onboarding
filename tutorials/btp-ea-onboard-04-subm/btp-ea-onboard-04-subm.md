@@ -3,7 +3,6 @@ author_name: Oliver Stiefbold
 keywords: About BTP Business Technology Platform
 auto_validation: true
 primary_tag: software-product>sap-business-technology-platform
-tags: [ software-product>SAP BTP, Cloud Foundry runtime and environment, tutorial>tutorial tutorial>beginner, topic>cloud ]
 time: 30
 parser: v2
 ---
