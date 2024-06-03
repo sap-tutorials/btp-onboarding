@@ -1,11 +1,10 @@
 ---
-author_name: Oliver Stiefbold, Gaurav Abbi
-author_profile: https://github.com/abbi-gaurav
 keywords: Setup SAP BTP, Kyma runtime
-tags: [ tutorial>beginner]
-primary_tag: software-product>SAP BTP, Kyma runtime
-time: 15
 parser: v2
+time: 30
+tags: [ tutorial>beginner ]
+primary_tag: topic>sap-community
+author_name: Gaurav Abbi, Oliver Stiefbold
 ---
 
 # Setup SAP BTP, Kyma Runtime
