@@ -1,11 +1,9 @@
 ---
-author_name: Nagesh Caparthy
-author_profile: https://github.com/nagesh-caparthy
-keywords: About BTP Business Technology Platform
-tags: [ tutorial>beginner, software-product>sap-business-technology-platform]
-primary_tag: software-product>sap-business-technology-platform
-time: 30
 parser: v2
+time: 30
+tags: [ tutorial>beginner ]
+primary_tag: topic>sap-community
+author_name: Nagesh Caparthy
 ---
 
 # Create a Cloud Foundry Subaccount with a Booster
