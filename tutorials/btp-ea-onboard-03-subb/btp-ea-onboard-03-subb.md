@@ -1,4 +1,5 @@
 ---
+keywords: About BTP Business Technology Platform
 parser: v2
 time: 30
 tags: [ tutorial>beginner ]
