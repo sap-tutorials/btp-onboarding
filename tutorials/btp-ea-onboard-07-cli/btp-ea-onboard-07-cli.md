@@ -1,11 +1,10 @@
 ---
-author_name: Oliver Stiefbold
-author_profile: https://github.com/Gituserneumann
 keywords: About BTP Business Technology Platform
-tags: [ tutorial>beginner]
-primary_tag: software-product>sap-business-technology-platform
-time: 15
 parser: v2
+time: 30
+tags: [ tutorial>beginner ]
+primary_tag: topic>sap-community
+author_name: Oliver Stiefbold
 ---
 
 
