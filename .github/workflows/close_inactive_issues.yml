@@ -14,5 +14,5 @@ jobs:
           days-before-issue-stale: 0
           days-before-issue-close: 0
           stale-issue-label: "stale"
-          operations-per-run: 10000
+          operations-per-run: 100000
           repo-token: ${{ secrets.GITHUB_TOKEN }}
