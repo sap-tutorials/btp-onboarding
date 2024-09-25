@@ -7,47 +7,116 @@ primary_tag: topic>sap-community
 author_name: Gaurav Abbi, Oliver Stiefbold
 ---
 
-
-
 # Create a "Hello-World" Kyma Function and a Microservice
 
-Once the SAP BTP, Kyma Runtime is entitled and enabled **and** you have enabled the Kyma module "Serverless", you can start to create your first function and microservice in Kyma.
+Once the SAP BTP, Kyma Runtime is entitled and enabled it's time to enable the Kyma module "Serverless", and you can start to create your first function and microservice in Kyma.
 
-In this tutorial, you will use the Kyma Dashboard to create a Kyma function and microservice. 
+In this tutorial, you will use the Kyma Dashboard to enable the Kyma module "Serverless", create a Kyma function with a microservice. 
 
 ## You will learn
+  - How to enter Kyma Dashboard
   - How to create a Kyma Function
   - How to create a Kyma Microservice
 
 ## Prerequisites
 
-You have created and set up your "SAP BTP, Kyma Environment", and enabled the Kyma "Serverless" module.
+You have created and set up your "SAP BTP, Kyma Environment" either by Quick Account Setup or manually.
 
-
-### Create a Hello-World Kyma Function
-
-Now, as the BTP Service Kyma is entitled and enabled, you can create the first service in Kyma.
-
-
-**Procedure**
+### Enter Kyma Dashboard
 
 1. In your BTP Cockpit go to your subaccount, choose Services and the Instances and Subscriptions.
 
 2. On your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment," and click on the three dots `...`. Then, choose "Go to Dashboard." 
 
-3. Your Kyma Dashboard opens. You are on the "Cluster Details" home page.
+    ![Link to Enter Kyma Dashbord](images/2_9_kyma_gotodashboard.png)
+
+3. If you use the pre-configured SAP Identity Provider in your Enterprise or Trial Account    **2-Factor-Authentication** is enabled and will be enforced. 
+
+    Choose your **authenticator app** of choice on your mobile phone. 
+
+    Open the app on your mobile and press e.g. **+** to add a new **account**. Choose **Other Account** if asked. 
+
+    Scan the **QR Code**. A password to access Kyma will be created. Enter this password:
+ 
+    ![Enter your authenticator app password](images/2_10_kyma_2fa.png)
+
+4. Congratulations, you have entered the Kyma dashboard! 
+
+    >Note: Only two Kyma modules are pre-installed.
+
+    ![Your Kyma Dasboard, Cluster Details](images/2_11_kyma_dashboard.png)
+
+    Istio is an open-source service mesh that provides a uniform way to manage, connect, and secure microservices.
+
+    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application’s configuration and handles resource reconciliation.
+
+
+### Enable Serverless module
+
+To use additional Kyma modules, you must enable a module first. You can do that using the Kyma dashboard or Kyma CLI. If you no longer need the module, disable it to save resources.
+
+In this tutorial, you use the default release channel "regular channel". You can also choose "Fast Channel". For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
+
+If you want to enable additional modules, follow this procedure:
+
+#### Procedure
+
+1. When your Kyma Dashboard opens. You are on the "Cluster Details" home page.
+
+    Click "Modify".
+
+    ![Add Kyma module](images/23_1_addmodule.png)
+
+2. You enter your "default" Kyma Namepace.
+
+    Click on "Edit".
+
+    ![Edit Kyma module](images/23_2_addmodule_edit.png)
+
+
+3. Select the serverless Kyma module and add it. You will need it when you create a Kyma function.
+
+    Click "Update".
+
+    ![Add Serverless module](images/23_3_addserverless.png)
+
+4. The module will be added. You can see the progress on your Cluster Details home page.
+
+    ![The module will be activated](images/23_4_addmodule_unknown.png)
+
+    It takes a while to complete.
+
+    
+
+5. Once done, click on the serverless module.
+
+    ![The Kyma module is ready](images/23_5_addmodule_ready.png)
+
+    You will be forwarded to your default Namespace. The Workload "functions" is now available.
+
+    ![Functions are now available](images/23_6_addmodule_functions.png)
+
+
+Congratulations! You enabled the serverless Functions in Kyma. 
+
+
+### Create a Hello-World Kyma Function
+
+**Procedure**
+
+1. Go back to the "Cluster Details" home page.
 
     Choose "Namespaces" on the left-handed navigation pane and select **default** in the list of namespaces.
     
     ![Acces your Kyma default workspace](images/3_1_kyma_namespace.png)
 
-4. In the default Namespace, select **Workloads --> Functions** and select **+ Create Function**.
+2. In the default Namespace, select **Workloads --> Functions** and select **+ Create Function**.
 
     >Note: If the module "Functions" is not shown, you have not yet enabled the module "Serverless". See the tutorial "Setup SAP BTP, Kyma Runtime" for more information.
 
     ![](images/3_2_kyma_function_1.png)
 
-5. The "Create Function" wizard opens. Keep the preset **Simple**.
+3. The "Create Function" wizard opens. Keep the preset **Simple**.
 
     - Provide a name, e.g. **hello-world**. 
 
@@ -66,19 +135,19 @@ Now, as the BTP Service Kyma is entitled and enabled, you can create the first s
     ![](images/3_2_kyma_function_2.png)
 
 
-6. It will take some seconds to create the function. The result is a new function **hello-world** in Kyma Functions.
+4. It will take some seconds to create the function. The result is a new function **hello-world** in Kyma Functions.
 
     Check also the configuration of the Function. It does not have "API Rules" yet.
 
     ![](images/3_2_kyma_function_3.png)
 
-7. Navigate to **Discovery and Network --> API Rules**. 
+5. Navigate to **Discovery and Network --> API Rules**. 
 
     Select **+ Create API Rule**.
 
     ![](images/3_3_kyma_api_1.png)
    
-8. Provide a name, e.g. **hello-rule**
+6. Provide a name, e.g. **hello-rule**
 
     - As a Service, choose the function you just created: **hello-world**.  
     
@@ -92,18 +161,18 @@ Now, as the BTP Service Kyma is entitled and enabled, you can create the first s
       
     ![](images/3_3_kyma_api_3.png)
 
-9. The API Rule "hello-rule" is created. 
+7. The API Rule "hello-rule" is created. 
    
     Click on the host URL to execute your function in a browser window.
 
     ![](images/3_3_kyma_api_4.png)
 
    
-10. A browser window will open showing the result of the function:
+8. A browser window will open showing the result of the function:
 
      **`Hello World from the Kyma Function hello-world running on nodejs18!`**
       
-11. You may also execute your function under **Workloads --> Functions**. 
+9. You may also execute your function under **Workloads --> Functions**. 
 
      - Select Function "hello-world". 
  
@@ -131,17 +200,15 @@ You will use the Kyma example **orders-service** for this. The Kyma example "ord
 
 
 
-1. Open your Kyma dashboard in your BTP Kyma subaccount.
+1. Open your Kyma dashboard, select your **Namespace**, for example **default**.
 
-2. Select your **Namespace**, for example **default**.
+2. Select **Workloads --> Deployments** in the left navigation pane of your dashboard.
 
-3. Select **Workloads --> Deployments** in the left navigation pane of your dashboard.
-
-4. Click on the button `+ Create Deployment` in the detail view.
+3. Click on the button `+ Create Deployment` in the detail view.
 
     ![](images/5_1_createdeployment.png)
 
-5. Choose the preset **Simple**  and provide the following parameters:
+4. Choose the preset **Simple**  and provide the following parameters:
 
     - Name: `orders-deployment`
     
@@ -160,9 +227,9 @@ You will use the Kyma example **orders-service** for this. The Kyma example "ord
 
     ![](images/5_2_deployment_create.png)
 
-6. Click `Create`.
+5. Click `Create`.
 
-7. A new deployment **orders-deployment** will be created.
+6. A new deployment **orders-deployment** will be created.
 
     The operation was successful if you can see 1/1 Pods running in the Deployment's view.
    
@@ -204,7 +271,7 @@ You cannot access and test your new orders-service yet from outside the cluster.
 
 To expose the microservice, you must create an **API Rule** for it, just like when you exposed our Function.
 
-1. In your dashboard, go to **Discovery and Network --> API Rules**.
+1. In your Kyma dashboard, go to **Discovery and Network --> API Rules**.
 
 2. Click on `+ Create API Rule`. 
 

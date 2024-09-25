@@ -7,7 +7,7 @@ primary_tag: topic>sap-community
 author_name: Gaurav Abbi, Oliver Stiefbold
 ---
 
-# Setup SAP BTP, Kyma Runtime
+# Set up SAP BTP, Kyma Runtime
 
 <!-- description --> SAP BTP, Kyma Runtime provides a fully managed Kubernetes runtime based on the open-source project [Kyma](https://kyma-project.io/#/).
 With this cloud-native solution, developers can extend SAP solutions with serverless Functions and combine them with containerized microservices.
@@ -157,83 +157,11 @@ Once your subaccount is entitled to use Kyma Runtime, you can "Enable Kyma" in y
 
     ![Creation of Kyma Cluster will take some time](images/2_8_kymasub_enable_5.png)
 
-7. Once the cluster is created you are able to enter the Kyma dashboard.
+7. Once the cluster is created you will see a link to enter the Kyma dashboard.
 
-    Click "Link to dashboard".
+    Click "Go to dashboard".
 
     ![Link to Enter Kyma Dashbord](images/2_9_kyma_gotodashboard.png)
 
 
-
-8. If you use the pre-configured SAP Identity Provider in your Enterprise or Trial Account    **2-Factor-Authentication** is enabled and will be enforced. 
-
-    Choose your **authenticator app** of choice on your mobile phone. 
-
-    Open the app on your mobile and press e.g. **+** to add a new **account**. Choose **Other Account** if asked. 
-
-    Scan the **QR Code**. A password to access Kyma will be created. Enter this password:
- 
-    ![Enter your authenticator app password](images/2_10_kyma_2fa.png)
-
-9. Congratulations, you have entered the Kyma dashboard! 
-
-    >Note: Only two Kyma modules are pre-installed.
-
-    ![Your Kyma Dasboard, Cluster Details](images/2_11_kyma_dashboard.png)
-
-    Istio is an open-source service mesh that provides a uniform way to manage, connect, and secure microservices.
-
-    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application’s configuration and handles resource reconciliation.
-
-
-### Enable SAP BTP Kyma Modules
-
-To use additional Kyma modules, you must enable a module first. You can do that using the Kyma dashboard or Kyma CLI. If you no longer need the module, disable it to save resources.
-
-In this tutorial, you use the default release channel "regular channel". You can also choose "Fast Channel". For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
-
-If you want to enable additional modules, follow this procedure:
-
-#### Procedure
-
-1. In your BTP Cockpit go to your subaccount, choose Services and the Instances and Subscriptions.
-
-2. In your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment" and click on three dots `...`. Choose "Go to Dashboard". 
-
-3. Your Kyma Dashboard opens. You are on the "Cluster Details" home page.
-
-    Click "Modify".
-
-    ![Add Kyma module](images/23_1_addmodule.png)
-
-4. You enter your "default" Kyma Namepace.
-
-    Click on "Edit".
-
-    ![Edit Kyma module](images/23_2_addmodule_edit.png)
-
-
-5. Select the serverless Kyma module and add it. You will need it when you create a Kyma function.
-
-    Click "Update".
-
-    ![Add Serverless module](images/23_3_addserverless.png)
-
-6. The module will be added. You can see the progress on your Cluster Details home page.
-
-    ![The module will be activated](images/23_4_addmodule_unknown.png)
-
-    It takes a while to complete.
-
-    
-
-7. Once done, click on the serverless module.
-
-    ![The Kyma module is ready](images/23_5_addmodule_ready.png)
-
-    You will be forwarded to your default Namespace. The Workload "functions" is now available.
-
-    ![Functions are now available](images/23_6_addmodule_functions.png)
-
-
-Congratulations! You enabled the serverless Functions in Kyma. 
+Congratulations! You enabled SAP BTP, Kyma runtime. 
