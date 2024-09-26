@@ -9,9 +9,9 @@ author_name: Gaurav Abbi, Oliver Stiefbold
 
 # Create a "Hello-World" Kyma Function and a Microservice
 
-Once the SAP BTP, Kyma Runtime is entitled and enabled it's time to enable the Kyma module "Serverless", and you can start to create your first function and microservice in Kyma.
+<!-- description -->Once the SAP BTP, Kyma Runtime is entitled and enabled it's time to enable the Kyma module "Serverless", so you can start creating your first function and microservice in Kyma.
 
-In this tutorial, you will use the Kyma Dashboard to enable the Kyma module "Serverless", create a Kyma function with a microservice. 
+In this tutorial, you will use the Kyma Dashboard to enable the Kyma module "Serverless", and create a Kyma function with a microservice. 
 
 ## You will learn
   - How to enter Kyma Dashboard
@@ -48,7 +48,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
     Istio is an open-source service mesh that provides a uniform way to manage, connect, and secure microservices.
 
-    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application’s configuration and handles resource reconciliation.
+    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application's configuration and handles resource reconciliation.
 
 
 ### Enable Serverless module
@@ -67,7 +67,7 @@ If you want to enable additional modules, follow this procedure:
 
     ![Add Kyma module](images/23_1_addmodule.png)
 
-2. You enter your "default" Kyma Namepace.
+2. You enter your "default" Kyma Namespace.
 
     Click on "Edit".
 
@@ -114,7 +114,7 @@ Congratulations! You enabled the serverless Functions in Kyma.
 
     >Note: If the module "Functions" is not shown, you have not yet enabled the module "Serverless". See the tutorial "Setup SAP BTP, Kyma Runtime" for more information.
 
-    ![](images/3_2_kyma_function_1.png)
+    ![kyma function](images/3_2_kyma_function_1.png)
 
 3. The "Create Function" wizard opens. Keep the preset **Simple**.
 
@@ -132,20 +132,20 @@ Congratulations! You enabled the serverless Functions in Kyma.
     
     - Choose **Create**.
 
-    ![](images/3_2_kyma_function_2.png)
+    ![kyma function](images/3_2_kyma_function_2.png)
 
 
 4. It will take some seconds to create the function. The result is a new function **hello-world** in Kyma Functions.
 
     Check also the configuration of the Function. It does not have "API Rules" yet.
 
-    ![](images/3_2_kyma_function_3.png)
+    ![kyma function](images/3_2_kyma_function_3.png)
 
 5. Navigate to **Discovery and Network --> API Rules**. 
 
     Select **+ Create API Rule**.
 
-    ![](images/3_3_kyma_api_1.png)
+    ![kyma api](images/3_3_kyma_api_1.png)
    
 6. Provide a name, e.g. **hello-rule**
 
@@ -206,7 +206,7 @@ You will use the Kyma example **orders-service** for this. The Kyma example "ord
 
 3. Click on the button `+ Create Deployment` in the detail view.
 
-    ![](images/5_1_createdeployment.png)
+    ![create deployment](images/5_1_createdeployment.png)
 
 4. Choose the preset **Simple**  and provide the following parameters:
 
@@ -225,7 +225,7 @@ You will use the Kyma example **orders-service** for this. The Kyma example "ord
 
     
 
-    ![](images/5_2_deployment_create.png)
+    ![deployment create](images/5_2_deployment_create.png)
 
 5. Click `Create`.
 
@@ -233,7 +233,7 @@ You will use the Kyma example **orders-service** for this. The Kyma example "ord
 
     The operation was successful if you can see 1/1 Pods running in the Deployment's view.
    
-    ![](images/5_3_deployment.png)
+    ![deployment](images/5_3_deployment.png)
 
 
 ### Create the Service
@@ -260,7 +260,7 @@ Once you have the deployment, you can create a Kubernetes Service to allow other
     - Target Port: 8080 (or other)
     - Application Protocol: HTTP
 
-    ![](images/5_4_service_create.png)
+    ![service create](images/5_4_service_create.png)
 
 4. A new service, called **orders-service** will be created.
 
@@ -295,7 +295,7 @@ To expose the microservice, you must create an **API Rule** for it, just like wh
 
     Keep the values in the section "Rules".
 
-    ![](images/5_5_apirule_create.png)
+    ![api rule create](images/5_5_apirule_create.png)
 
 5. Choose Create.
 
@@ -311,7 +311,7 @@ To expose the microservice, you must create an **API Rule** for it, just like wh
     
     URL: `https://orders-host.c-123456.kyma.ondemand.com/orders` 
 
-    ![](images/5_6_apirule_start.png)
+    ![api rule start](images/5_6_apirule_start.png)
 
 
 7. If you extend the URL correctly, you can see your orders: **`[]`**. 
