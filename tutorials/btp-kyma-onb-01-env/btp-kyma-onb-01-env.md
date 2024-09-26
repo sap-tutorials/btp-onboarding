@@ -84,7 +84,7 @@ If you use a BTP Enterprise Account, you are not yet entitled to the **Kyma runt
 
 1. In your subaccount, navigate to **Entitlements --> Entity Assignments**. 
 
-    Select as Entity your subaccount (e.g. the just created subaccount_for_kyma).
+    Select as Entity your subaccount (e.g. the just created subaccount for Kyma).
 
     Put **Kyma** into the search field. In a new subaccount, you will see no existing entitlements.
 

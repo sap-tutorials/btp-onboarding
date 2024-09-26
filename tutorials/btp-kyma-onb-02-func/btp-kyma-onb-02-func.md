@@ -159,13 +159,13 @@ Congratulations! You enabled the serverless Functions in Kyma.
 
     - Choose **Create**.
       
-    ![](images/3_3_kyma_api_3.png)
+    ![kyma api](images/3_3_kyma_api_3.png)
 
 7. The API Rule "hello-rule" is created. 
    
     Click on the host URL to execute your function in a browser window.
 
-    ![](images/3_3_kyma_api_4.png)
+    ![kyma api](images/3_3_kyma_api_4.png)
 
    
 8. A browser window will open showing the result of the function:
@@ -178,7 +178,7 @@ Congratulations! You enabled the serverless Functions in Kyma.
  
      - Select **Configuration** and you can run the function from here.
       
-     ![](images/3_3_kyma_api_5.png)
+     ![kyma api](images/3_3_kyma_api_5.png)
 
 
 
