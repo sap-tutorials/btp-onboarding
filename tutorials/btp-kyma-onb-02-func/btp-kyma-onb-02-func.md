@@ -96,7 +96,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 1. Click **Create**. The "Create Function" wizard opens. 
     ![kyma function](images/2_18_function_edit.png)
 
-    Choose the teamplate **Default**.
+    Choose the template **Default**.
 
     - Provide a name, e.g. **hello-world**. 
 
@@ -116,7 +116,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
     ![kyma function](images/2_19_running_function.png)
 
-    Click ont the **hello-world** function and check the "Configuration" tab, it does not have any "API Rules" yet. We need to create one to define the rules of accessing the function via APIs.
+    Click on the **hello-world** function and check the "Configuration" tab, it does not have any "API Rules" yet. We need to create one to define the rules of accessing the function via APIs.
 
     ![kyma function no api rules](images/2_20_no_api_rules.png)
 

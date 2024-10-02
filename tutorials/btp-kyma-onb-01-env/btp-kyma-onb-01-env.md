@@ -26,7 +26,7 @@ You need either a BTP Enterprise Account with unused Kyma entitlement or a BTP T
 
 ## Intro
 
->Note: If you want to follow this tutorial as part of a mission from the discovery-center, consider using the 'Quick Account Set Up' instead, it will do the steps outlined here for you. If you, however, preffer to do them manually, this tutorial is for you.
+>Note: If you want to follow this tutorial as part of a mission from the discovery-center, consider using the 'Quick Account Set Up' instead, it will do the steps outlined here for you. If you, however, prefer to do them manually, this tutorial is for you.
 
 SAP BTP, Kyma runtime provides a fully managed Kubernetes runtime based on the open-source project [Kyma](https://kyma-project.io/#/). With this cloud-native solution, developers can extend SAP solutions with serverless Functions and combine them with containerized microservices.
 
