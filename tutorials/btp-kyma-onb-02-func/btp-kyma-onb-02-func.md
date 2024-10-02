@@ -24,9 +24,9 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
 ### Enter Kyma Dashboard
 
-1. In your BTP Cockpit go to your subaccount, choose Services and the Instances and Subscriptions.
+1. In your BTP Cockpit go to your subaccount, choose **Services --> Instances and Subscriptions**.
 
-2. On your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment," and click on the three dots `...`. Then, choose "Go to Dashboard." 
+2. On your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment," and click on the three dots `...`. Then, choose **Go to Dashboard**.
 
     ![Link to Enter Kyma Dashbord](images/2_9_kyma_gotodashboard.png)
 
@@ -42,87 +42,66 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
 4. Congratulations, you have entered the Kyma dashboard! 
 
-    >Note: Only two Kyma modules are pre-installed.
-
     ![Your Kyma Dasboard, Cluster Details](images/2_11_kyma_dashboard.png)
 
-    Istio is an open-source service mesh that provides a uniform way to manage, connect, and secure microservices.
+### Enable the Serverless module
 
-    Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application's configuration and handles resource reconciliation.
+1. Click **Modify Modules**.
 
+    You are on a page that lists your Kyma module.
 
-### Enable Serverless module
+    ![Your Kyma Dasboard, Cluster Details](images/2_12_kyma_modules.png)
+    
+    >Note: When you enable Kyma, it is provisioned with the default modules added.
+    
+Istio is a service mesh with Kyma-specific configuration.
 
-To use additional Kyma modules, you must enable a module first. You can do that using the Kyma dashboard or Kyma CLI. If you no longer need the module, disable it to save resources.
+API Gateway provides functionalities that allow you to expose and secure APIs.
 
-In this tutorial, you use the default release channel "regular channel". You can also choose "Fast Channel". For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
+Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service operator that allows you to consume SAP BTP services from your Kubernetes cluster using Kubernetes-native tools.
 
-If you want to enable additional modules, follow this procedure:
+2. Click **Add** to open the Add Modules view. Select **serverless** and click **Add**.
 
-#### Procedure
+   ![Browsing modules](images/2_13_add_module.png) 
 
-1. When your Kyma Dashboard opens. You are on the "Cluster Details" home page.
-
-    Click "Modify".
-
-    ![Add Kyma module](images/23_1_addmodule.png)
-
-2. You enter your "default" Kyma Namespace.
-
-    Click on "Edit".
-
-    ![Edit Kyma module](images/23_2_addmodule_edit.png)
+    In this tutorial, you use the Serverless module from the default release channel - the regular channel. You can also choose the fast channel. For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
 
 
-3. Select the serverless Kyma module and add it. You will need it when you create a Kyma function.
 
-    Click "Update".
+3.  After you click **Add** you are back to the page with all the enabled modules. You can see that the state of the Serverless module is "Processing". It may take about 2 minutes before the state becomes "Ready".
 
-    ![Add Serverless module](images/23_3_addserverless.png)
+    ![Edit Kyma module](images/12_4_serverless_processing.png)
 
-4. The module will be added. You can see the progress on your Cluster Details home page.
 
-    ![The module will be activated](images/23_4_addmodule_unknown.png)
+4. Once the state is "Ready", go to **Namespaces** in the left navigation pane and select the **default** namespace.
 
-    It takes a while to complete.
+    ![The Kyma module is ready](images/2_15_namespaces_default.png)
+
+
+    ![The Kyma module is ready](images/2_16_default_namespace_selected.png)
 
     
+5. In the **default** namespace view, go to **Workloads > Functions**, the newly created option that comes with the Serverless module.
 
-5. Once done, click on the serverless module.
-
-    ![The Kyma module is ready](images/23_5_addmodule_ready.png)
-
-    You will be forwarded to your default Namespace. The Workload "functions" is now available.
-
-    ![Functions are now available](images/23_6_addmodule_functions.png)
+    ![Functions are now available](images/2_17_workloads_functions.png)
 
 
-Congratulations! You enabled the serverless Functions in Kyma. 
+    Congratulations! Now you can create serverless Functions in Kyma. 
 
 
 ### Create a Hello-World Kyma Function
 
-**Procedure**
 
-1. Go back to the "Cluster Details" home page.
+1. Click **Create**. The "Create Function" wizard opens. 
+    ![kyma function](images/2_18_function_edit.png)
 
-    Choose "Namespaces" on the left-handed navigation pane and select **default** in the list of namespaces.
-    
-    ![Acces your Kyma default workspace](images/3_1_kyma_namespace.png)
-
-2. In the default Namespace, select **Workloads --> Functions** and select **+ Create Function**.
-
-    >Note: If the module "Functions" is not shown, you have not yet enabled the module "Serverless". See the tutorial "Setup SAP BTP, Kyma Runtime" for more information.
-
-    ![kyma function](images/3_2_kyma_function_1.png)
-
-3. The "Create Function" wizard opens. Keep the preset **Simple**.
+    Choose the **Default** template.
 
     - Provide a name, e.g. **hello-world**. 
 
     - Choose **Language** > **JavaScript**. 
 
-    - Choose your **Runtime Version** > e.g. **node.js 18**.
+    - Choose your **Runtime Version** > e.g. **node.js 20**.
 
     - Choose **Function Profile** > keep the pre-defined value **XS**.
 
@@ -130,26 +109,25 @@ Congratulations! You enabled the serverless Functions in Kyma.
   
     - You may now also check the other presets, "Advanced" and "YAML".  
     
-    - Choose **Create**.
+    - Click **Create**.
 
-    ![kyma function](images/3_2_kyma_function_2.png)
+4. It takes a few seconds to create a Function. The result is a new Function **hello-world** in the list of Kyma Functions.
 
+    ![kyma function](images/2_19_running_function.png)
 
-4. It will take some seconds to create the function. The result is a new function **hello-world** in Kyma Functions.
+    Click on the **hello-world** Function and check the "Configuration" tab, it does not have any "API Rules" yet. We need to create one to define the rules of accessing the Function using APIs.
 
-    Check also the configuration of the Function. It does not have "API Rules" yet.
+    ![kyma function no api rules](images/2_20_no_api_rules.png)
 
-    ![kyma function](images/3_2_kyma_function_3.png)
+5. Navigate to **Discovery and Network --> API Rules** and click **Create**.
 
-5. Navigate to **Discovery and Network --> API Rules**. 
-
-    Select **+ Create API Rule**.
-
-    ![kyma api](images/3_3_kyma_api_1.png)
+    ![kyma api](images/2_21_api_rule_create.png)
    
-6. Provide a name, e.g. **hello-rule**
+6. In the editor, provide a name, e.g. **hello-rule**, and add the following configuration details:
 
     - As a Service, choose the function you just created: **hello-world**.  
+    
+    - As a Port, type **80**
     
     - Keep the prefilled Gateway.  
 
@@ -157,9 +135,9 @@ Congratulations! You enabled the serverless Functions in Kyma.
 
     - Keep the **Rules** section as is. 
 
-    - Choose **Create**.
-      
-    ![kyma api](images/3_3_kyma_api_3.png)
+    - Click **Create**.
+
+    ![kyma api rule](images/2_22_hello_rule.png)
 
 7. The API Rule "hello-rule" is created. 
    
@@ -170,16 +148,8 @@ Congratulations! You enabled the serverless Functions in Kyma.
    
 8. A browser window will open showing the result of the function:
 
-     **`Hello World from the Kyma Function hello-world running on nodejs18!`**
+     **`Hello World from the Kyma Function hello-world running on nodejs20!`**
       
-9. You may also execute your function under **Workloads --> Functions**. 
-
-     - Select Function "hello-world". 
- 
-     - Select **Configuration** and you can run the function from here.
-      
-     ![kyma api](images/3_3_kyma_api_5.png)
-
 
 
 ### Deploy a Microservice on Kyma
@@ -193,11 +163,7 @@ You will use the Kyma example **orders-service** for this. The Kyma example "ord
  - and as a docker image on Google Container Registry `eu.gcr.io/kyma-project/develop/orders-service:68a58069` .`
 
 
-
-
-
 #### Deploy the Microservice from the Image
-
 
 
 1. Open your Kyma dashboard, select your **Namespace**, for example **default**.
