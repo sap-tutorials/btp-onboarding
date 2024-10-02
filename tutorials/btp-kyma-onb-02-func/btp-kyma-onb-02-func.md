@@ -24,7 +24,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
 ### Enter Kyma Dashboard
 
-1. In your BTP Cockpit go to your subaccount, choose Services and the Instances and Subscriptions.
+1. In your BTP Cockpit go to your subaccount, choose **Services --> Instances and Subscriptions**.
 
 2. On your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment," and click on the three dots `...`. Then, choose **Go to Dashboard**.
 
