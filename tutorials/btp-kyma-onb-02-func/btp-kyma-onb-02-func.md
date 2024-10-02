@@ -124,7 +124,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
     ![kyma api](images/2_21_api_rule_create.png)
    
-6. In the editor provide a name, e.g. **hello-rule**
+6. In the editor, provide a name, e.g. **hello-rule**, and add the following configuration details:
 
     - As a Service, choose the function you just created: **hello-world**.  
     
