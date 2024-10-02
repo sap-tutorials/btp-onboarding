@@ -9,7 +9,7 @@ author_name: Gaurav Abbi, Oliver Stiefbold
 
 # Set up SAP BTP, Kyma Runtime
 
-<!-- description --> SAP BTP, Kyma Runtime provides a fully managed Kubernetes runtime based on the open-source project Kyma. 
+<!-- description --> SAP BTP, Kyma runtime provides a fully managed Kubernetes runtime based on the open-source project Kyma. 
 With this cloud-native solution, developers can extend SAP solutions with serverless Functions and combine them with containerized microservices.
 
 ## You will learn
