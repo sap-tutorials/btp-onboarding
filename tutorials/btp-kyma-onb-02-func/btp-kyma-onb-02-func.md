@@ -81,7 +81,7 @@ Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service ope
     ![The Kyma module is ready](images/2_16_default_namespace_selected.png)
 
     
-5. Click **Workloads** on the left navigation pane, and click the new option **Functions**.
+5. In the **default** namespace view, go to **Workloads > Functions**, the newly created option that comes with the Serverless module.
 
     ![Functions are now available](images/2_17_workloads_functions.png)
 
