@@ -9,7 +9,7 @@ author_name: Gaurav Abbi, Oliver Stiefbold
 
 # Set up SAP BTP, Kyma Runtime
 
-<!-- description --> SAP BTP, Kyma Runtime provides a fully managed Kubernetes runtime based on the open-source project [Kyma](https://kyma-project.io/#/).
+<!-- description --> SAP BTP, Kyma Runtime provides a fully managed Kubernetes runtime based on the open-source project Kyma. 
 With this cloud-native solution, developers can extend SAP solutions with serverless Functions and combine them with containerized microservices.
 
 ## You will learn
@@ -17,8 +17,6 @@ With this cloud-native solution, developers can extend SAP solutions with server
   - Create a Subaccount for Enterprise Accounts or enter your Trial Subaccount
   - Entitle your Subaccount for Kyma runtime
   - Enable Kyma Runtime
-  - Access your Kyma Dashboard
-  - Create and deploy a "Hello-World" Node.js function
 
 
 ## Prerequisites
@@ -28,7 +26,9 @@ You need either a BTP Enterprise Account with unused Kyma entitlement or a BTP T
 
 ## Intro
 
-SAP BTP, Kyma runtime provides a fully managed Kubernetes runtime based on the open-source project "Kyma". With this cloud-native solution, developers can extend SAP solutions with serverless Functions and combine them with containerized microservices.
+>Note: If you want to follow this tutorial as part of a mission from the discovery-center, consider using the 'Quick Account Set Up' instead, it will do the steps outlined here for you. If you, however, preffer to do them manually, this tutorial is for you.
+
+SAP BTP, Kyma runtime provides a fully managed Kubernetes runtime based on the open-source project [Kyma](https://kyma-project.io/#/). With this cloud-native solution, developers can extend SAP solutions with serverless Functions and combine them with containerized microservices.
 
 
 ### Create a Subaccount for Kyma Runtime
@@ -68,9 +68,6 @@ In this step of the tutorial, you create a new subaccount for your Kyma environm
     The pre-configured services for a new subaccount are shown.
    
     ![Discover your new subaccount ](images/22_5_newsub.png)
-
-
-
 
 
 ### Entitle your Subaccount for Kyma Runtime
@@ -159,7 +156,7 @@ Once your subaccount is entitled to use Kyma Runtime, you can "Enable Kyma" in y
 
 7. Once the cluster is created you will see a link to enter the Kyma dashboard.
 
-    Click "Go to dashboard".
+    Click "Link to dashboard".
 
     ![Link to Enter Kyma Dashbord](images/2_9_kyma_gotodashboard.png)
 
