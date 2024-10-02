@@ -120,7 +120,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
     ![kyma function no api rules](images/2_20_no_api_rules.png)
 
-5. Navigate to **Discovery and Network --> API Rules** on the left navigation pane and click **Create**.
+5. Navigate to **Discovery and Network --> API Rules** and click **Create**.
 
     ![kyma api](images/2_21_api_rule_create.png)
    
