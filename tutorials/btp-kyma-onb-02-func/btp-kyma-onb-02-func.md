@@ -48,7 +48,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
 1. Click **Modify Modules**.
 
-    You are at the page with your Kyma modules.
+    You are on a page that lists your Kyma module.
 
     ![Your Kyma Dasboard, Cluster Details](images/2_12_kyma_modules.png)
     
