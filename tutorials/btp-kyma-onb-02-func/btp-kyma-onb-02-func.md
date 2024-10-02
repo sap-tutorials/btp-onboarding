@@ -54,7 +54,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
     
     >Note: Only a few Kyma modules are pre-installed.
     
-    E.g. Istio is an open-source service mesh that provides a uniform way to manage, connect, and secure microservices;
+Istio is a service mesh with Kyma-specific configuration.
 
     And Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application's configuration and handles resource reconciliation.
 
