@@ -68,7 +68,6 @@ Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service ope
 
     >Note: You can also enable and disable Kyma modules via Kyma CLI. 
 
-    >Note: At any time you can disable unused modules to save resources.
 
 3.  After you clicked **Add** you are back at the page with all of the enabled modules. Notice the state of the "Serverless" module - for about 2 minutes it will be in the 'Processing' state before it becomes "Ready" like the rest of your enabled modules.
 
