@@ -44,7 +44,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
     ![Your Kyma Dasboard, Cluster Details](images/2_11_kyma_dashboard.png)
 
-### Enable Serverless module
+### Enable the Serverless module
 
 1. Click **Modify Modules**.
 
