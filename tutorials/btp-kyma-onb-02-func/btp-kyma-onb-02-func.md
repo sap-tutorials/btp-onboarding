@@ -96,7 +96,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 1. Click **Create**. The "Create Function" wizard opens. 
     ![kyma function](images/2_18_function_edit.png)
 
-    Choose the template **Default**.
+    Choose the **Default** template.
 
     - Provide a name, e.g. **hello-world**. 
 
