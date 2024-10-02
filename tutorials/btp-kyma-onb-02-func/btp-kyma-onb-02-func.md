@@ -87,7 +87,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
     ![Functions are now available](images/2_17_workloads_functions.png)
 
 
-    Congratulations! You enabled the serverless Functions in Kyma. 
+    Congratulations! Now you can create serverless Functions in Kyma. 
 
 
 ### Create a Hello-World Kyma Function
