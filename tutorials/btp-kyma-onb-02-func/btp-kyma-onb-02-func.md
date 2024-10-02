@@ -73,7 +73,7 @@ Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service ope
     ![Edit Kyma module](images/12_4_serverless_processing.png)
 
 
-4. Once done, click on the **Namespaces** in the left navigation pane, and select "default" namespace.
+4. Once the state is "Ready", go to **Namespaces** in the left navigation pane and select the **default** namespace.
 
     ![The Kyma module is ready](images/2_15_namespaces_default.png)
 
