@@ -64,7 +64,7 @@ Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service ope
 
    ![Browsing modules](images/2_13_add_module.png) 
 
-    In this tutorial, you use the Serverless module from the default release channel "regular channel". You can also choose "Fast Channel". For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
+    In this tutorial, you use the Serverless module from the default release channel - the regular channel. You can also choose the fast channel. For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
 
     >Note: You can also enable and disable Kyma modules via Kyma CLI. 
 
