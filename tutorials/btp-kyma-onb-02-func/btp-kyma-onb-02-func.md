@@ -77,7 +77,6 @@ Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service ope
 
     ![The Kyma module is ready](images/2_15_namespaces_default.png)
 
-    You will be forwarded to your default Namespace. 
 
     ![The Kyma module is ready](images/2_16_default_namespace_selected.png)
 
