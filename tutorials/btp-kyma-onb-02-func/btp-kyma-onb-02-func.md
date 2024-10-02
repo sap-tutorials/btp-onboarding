@@ -112,7 +112,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
     
     - Click **Create**.
 
-4. It will take a few seconds to create the function. The result is a new function **hello-world** in the list of Kyma Functions.
+4. It takes a few seconds to create a Function. The result is a new Function **hello-world** in the list of Kyma Functions.
 
     ![kyma function](images/2_19_running_function.png)
 
