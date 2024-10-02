@@ -52,7 +52,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
 
     ![Your Kyma Dasboard, Cluster Details](images/2_12_kyma_modules.png)
     
-    >Note: Only a few Kyma modules are pre-installed.
+    >Note: When you enable Kyma, it is provisioned with the default modules added.
     
 Istio is a service mesh with Kyma-specific configuration.
 
