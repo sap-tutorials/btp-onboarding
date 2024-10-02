@@ -56,7 +56,9 @@ You have created and set up your "SAP BTP, Kyma Environment" either by Quick Acc
     
 Istio is a service mesh with Kyma-specific configuration.
 
-    And Kyma API Gateway Operator is an extension to the Kyma runtime that manages the API Gateway application's configuration and handles resource reconciliation.
+API Gateway provides functionalities that allow you to expose and secure APIs.
+
+Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service operator that allows you to consume SAP BTP services from your Kubernetes cluster using Kubernetes-native tools.
 
 2. Click **Add** and the page with modules ready to be enable will open. Select 'Serverless' and click **Add**.
 
