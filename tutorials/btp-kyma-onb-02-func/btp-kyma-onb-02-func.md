@@ -60,7 +60,7 @@ API Gateway provides functionalities that allow you to expose and secure APIs.
 
 Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service operator that allows you to consume SAP BTP services from your Kubernetes cluster using Kubernetes-native tools.
 
-2. Click **Add** and the page with modules ready to be enable will open. Select 'Serverless' and click **Add**.
+2. Click **Add** to open the Add Modules view. Select **serverless** and click **Add**.
 
    ![Browsing modules](images/2_13_add_module.png) 
 
