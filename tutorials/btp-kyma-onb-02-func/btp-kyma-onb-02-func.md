@@ -68,7 +68,7 @@ Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service ope
 
 
 
-3.  After you clicked **Add** you are back at the page with all of the enabled modules. Notice the state of the "Serverless" module - for about 2 minutes it will be in the 'Processing' state before it becomes "Ready" like the rest of your enabled modules.
+3.  After you click **Add** you are back to the page with all the enabled modules. You can see that the state of the Serverless module is "Processing". It may take about 2 minutes before the state becomes "Ready".
 
     ![Edit Kyma module](images/12_4_serverless_processing.png)
 
