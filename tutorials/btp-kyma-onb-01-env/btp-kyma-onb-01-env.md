@@ -54,7 +54,7 @@ In this step, you create a new subaccount for your Kyma runtime.
 
 ### Entitle your subaccount to use Kyma runtime
 
-If you use an SAP BTP trial account, you are already entitled to use the **Kyma runtime** service and can skip the "Entitle your subaccount to use Kyma runtime" step. If you use an SAP BTP enterprise account, you are not yet entitled to use the **Kyma runtime** service.
+If you use an SAP BTP trial account, you are already entitled to use the **Kyma runtime** service and can skip this step. If you use an SAP BTP enterprise account, you are not yet entitled to use the **Kyma runtime** service.
 
 1. In your global account, navigate to **Entitlements > Entity Assignments**.
 
