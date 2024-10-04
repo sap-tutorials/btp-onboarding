@@ -27,7 +27,7 @@ You have created and set up your "SAP BTP, Kyma Environment" either manually or 
 
 1. In your subaccount go to **Services > Instances and Subscriptions**.
 
-2. Sroll down to **Environments** and choose the three dots **...** in the Kyma Environment line. Then, choose **Go to Dashboard**.
+2. Scroll down to **Environments** and choose the three dots **...** in the Kyma Environment line. Then, choose **Go to Dashboard**.
 
 3. If you use the pre-configured shared SAP Cloud Identity Services tenant, SAP ID service, as an identity provider in your enterprise or trial account, the Two-Factor Authentication is enabled and will be enforced.
 
