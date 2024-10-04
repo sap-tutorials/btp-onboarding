@@ -169,6 +169,7 @@ You cannot access and test your new `orders-service` yet from outside of the clu
    - Leave the pre-defined details in the **Gateway** section
    - **Host**: choose your host from the dropdown menu and replace the wildcard (*) with a name, for example, `orders-host`
    - Leave the pre-defined details in the **Rules** section
+   - **Methods**: choose `GET` and `POST`
 
 3. The `orders-apirule` is created. Wait for the **Status** to be `OK`.
 

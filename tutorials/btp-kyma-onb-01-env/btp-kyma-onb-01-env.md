@@ -36,7 +36,7 @@ In this step, you create a new subaccount for your Kyma runtime.
 
 > **NOTE:** In an SAP BTP **trial account**, a subaccount with Kyma entitlement is already preconfigured. You could create another subaccount in trial, but you it will not have unused entitlements to use Kyma. You need to delete the Kyma entitlement in the preconfigured subaccount first.
 
-1. Navigate to your Global Account Account Explorer, the home page of your global account. Select **Create > Subaccount**.
+1. Navigate to your Global Account home page. Select **Create > Subaccount**.
 
    ![Create a new subaccount](images/22_1_createsub.png)
 
@@ -50,8 +50,7 @@ In this step, you create a new subaccount for your Kyma runtime.
 
 3. Once created, go to the subaccount and scroll down to **Entitlements**.
 
-   - If you use an SAP BTP trial account, you are already entitled to use the **Kyma runtime** service.
-   - If you use an SAP BTP enterprise account, you are not yet entitled to use the **Kyma runtime** service.
+   If you use an SAP BTP trial account, you are already entitled to use the **Kyma runtime** service and can skip the "Entitle your subaccount to use Kyma runtime" step.
 
 ### Entitle your subaccount to use Kyma runtime
 
