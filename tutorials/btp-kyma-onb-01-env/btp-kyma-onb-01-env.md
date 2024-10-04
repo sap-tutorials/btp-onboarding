@@ -28,8 +28,6 @@ An SAP BTP enterprise account with unused Kyma entitlement or an SAP BTP trial a
 
 [SAP BTP, Kyma runtime](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-environment?version=Cloud) provides a fully managed Kubernetes runtime based on the open-source project [Kyma](https://kyma-project.io/#/). With this cloud-native solution, developers can extend SAP solutions with serverless Functions and combine them with containerized microservices.
 
----
-
 ### Create a subaccount for Kyma runtime
 
 You can use an existing subaccount of your SAP BTP global enterprise account and enable Kyma, or create a new subaccount for this tutorial.

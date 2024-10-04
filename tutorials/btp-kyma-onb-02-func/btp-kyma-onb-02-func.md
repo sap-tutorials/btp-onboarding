@@ -166,8 +166,6 @@ You cannot access and test your new `orders-service` yet from outside of the clu
 
 1. Go to **Discovery and Network > API Rules** and choose **Create**.
 
-    ![kyma api](images/2_21_api_rule_create.png)
-
 2. Fill in the form in the **Create API Rule** view using the following details and choose **Create**
 
    - **Name**: `orders-apirule`
