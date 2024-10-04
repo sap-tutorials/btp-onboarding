@@ -11,7 +11,7 @@ author_name: Gaurav Abbi, Oliver Stiefbold
 
 <!-- description -->Once the SAP BTP, Kyma Runtime is entitled and enabled it's time to enable the Kyma module "Serverless", so you can start creating your first function and microservice in Kyma.
 
-In this tutorial, you will use Kyma dashboard to add the Serverless module and create a Kyma function with a microservice.
+In this tutorial, you will use Kyma dashboard to add the Serverless module and create a Kyma Function and a microservice.
 
 ## You will learn
 
@@ -173,7 +173,7 @@ You cannot access and test your new `orders-service` yet from outside of the clu
 
 3. The `orders-apirule` is created. Wait for the **Status** to be `OK`.
 
-4. Click on the **Host** URL to execute the Service in a browser window. A browser will open but the link will be empty because the underlying Docker image has no home page. Extend the URL by adding the **/orders** string.
+4. Click on the **Host** URL to execute the Service in a browser window. A browser will open, but the link will be empty because the underlying Docker image has no homepage. Extend the URL by adding the **/orders** string.
 
     For example:
     URL: `https://orders-host.c-123456.kyma.ondemand.com/` has to become
