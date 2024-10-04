@@ -1,5 +1,5 @@
 ---
-keywords: Setup SAP BTP, Kyma runtime
+keywords: Set up SAP BTP, Kyma runtime
 parser: v2
 time: 30
 tags: [ tutorial>beginner ]
