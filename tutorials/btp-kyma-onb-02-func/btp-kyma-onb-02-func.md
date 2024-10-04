@@ -180,7 +180,7 @@ You cannot access and test your new `orders-service` yet from outside of the clu
 
 5. If you extend the URL correctly, you can see your orders: **`[]`**. It is empty, as you have not created orders in this tutorial so far.
 
-#### Create sample content for your Service
+### Create sample content for your Service
 
 1. In the terminal call your service using curl. Replace `${APP_URL}` with your `orders-host` URL, for example, `https://orders-host.b1234567.kyma.ondemand.com/`.
 
