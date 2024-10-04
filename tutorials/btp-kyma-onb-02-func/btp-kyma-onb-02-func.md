@@ -7,299 +7,200 @@ primary_tag: topic>sap-community
 author_name: Gaurav Abbi, Oliver Stiefbold
 ---
 
-# Create a "Hello-World" Kyma Function and a Microservice
+# Create a "Hello-World" Kyma Function and a microservice
 
 <!-- description -->Once the SAP BTP, Kyma Runtime is entitled and enabled it's time to enable the Kyma module "Serverless", so you can start creating your first function and microservice in Kyma.
 
-In this tutorial, you will use the Kyma Dashboard to enable the Kyma module "Serverless", and create a Kyma function with a microservice. 
+In this tutorial, you will use Kyma dashboard to add the Serverless module and create a Kyma function with a microservice.
 
 ## You will learn
-  - How to enter Kyma Dashboard
+
+  - How to enter Kyma dashboard
   - How to create a Kyma Function
-  - How to create a Kyma Microservice
+  - How to create a Kyma microservice
 
 ## Prerequisites
 
-You have created and set up your "SAP BTP, Kyma Environment" either by Quick Account Setup or manually.
+You have created and set up your "SAP BTP, Kyma Environment" either manually or by Quick Account Setup.
 
-### Enter Kyma Dashboard
+### Enter Kyma dashboard
 
-1. In your BTP Cockpit go to your subaccount, choose **Services --> Instances and Subscriptions**.
+1. In your subaccount go to **Services > Instances and Subscriptions**.
 
-2. On your Instances and Subscriptions home page, scroll down to your Environments, choose the line "Kyma Environment," and click on the three dots `...`. Then, choose **Go to Dashboard**.
+2. Sroll down to **Environments** and choose the three dots **...** in the Kyma Environment line. Then, choose **Go to Dashboard**.
 
     ![Link to Enter Kyma Dashbord](images/2_9_kyma_gotodashboard.png)
 
-3. If you use the pre-configured SAP Identity Provider in your Enterprise or Trial Account    **2-Factor-Authentication** is enabled and will be enforced. 
+3. If you use the pre-configured shared SAP Cloud Identity Services tenant, SAP ID service, as an identity provider in your enterprise or trial account, the Two-Factor Authentication is enabled and will be enforced.
 
-    Choose your **authenticator app** of choice on your mobile phone. 
+    Go to your authenticator application on your mobile device and add a new account. Once you scan the QR Code, a password to access Kyma will be created. Enter the password in the **Passcode** field.
 
-    Open the app on your mobile and press e.g. **+** to add a new **account**. Choose **Other Account** if asked. 
-
-    Scan the **QR Code**. A password to access Kyma will be created. Enter this password:
- 
     ![Enter your authenticator app password](images/2_10_kyma_2fa.png)
 
-4. Congratulations, you have entered the Kyma dashboard! 
+Congratulations, you are in Kyma dashboard!
 
-    ![Your Kyma Dasboard, Cluster Details](images/2_11_kyma_dashboard.png)
+![Your Kyma Dasboard, Cluster Details](images/2_11_kyma_dashboard.png)
 
 ### Enable the Serverless module
 
-1. Click **Modify Modules**.
-
-    You are on a page that lists your Kyma module.
+1. In Kyma dashboard choose **Modify Modules**. This view lists your Kyma module.
 
     ![Your Kyma Dasboard, Cluster Details](images/2_12_kyma_modules.png)
-    
-    >Note: When you enable Kyma, it is provisioned with the default modules added.
-    
-Istio is a service mesh with Kyma-specific configuration.
 
-API Gateway provides functionalities that allow you to expose and secure APIs.
+    > **Note:** When you enable Kyma, it is provisioned with the default modules added:
+    > - The **Istio** module is a service mesh with Kyma-specific configuration.
+    > - The **API Gateway** module provides functionalities that allow you to expose and secure APIs.
+    > - Within the **SAP BTP Operator** module, BTP Manager installs the SAP BTP service operator that allows you to consume SAP BTP services from your Kubernetes cluster using Kubernetes-native tools.
 
-Within the SAP BTP Operator module, BTP Manager installs the SAP BTP service operator that allows you to consume SAP BTP services from your Kubernetes cluster using Kubernetes-native tools.
+2. Choose **Add** to open the **Add Modules** view. Select **serverless** and choose **Add**.
 
-2. Click **Add** to open the Add Modules view. Select **serverless** and click **Add**.
+   ![Browsing modules](images/2_13_add_module.png)
 
-   ![Browsing modules](images/2_13_add_module.png) 
+    > **NOTE:** In this tutorial you use the Serverless module from the default release channel, namely the regular channel. You can also choose the fast channel. For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
 
-    In this tutorial, you use the Serverless module from the default release channel - the regular channel. You can also choose the fast channel. For more information, see [Kyma Release Channels](https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-s-modular-approach?locale=en-US).
-
-
-
-3.  After you click **Add** you are back to the page with all the enabled modules. You can see that the state of the Serverless module is "Processing". It may take about 2 minutes before the state becomes "Ready".
-
-    ![Edit Kyma module](images/12_4_serverless_processing.png)
-
-
-4. Once the state is "Ready", go to **Namespaces** in the left navigation pane and select the **default** namespace.
-
-    ![The Kyma module is ready](images/2_15_namespaces_default.png)
-
+3. Once the module's state is `Ready`, go to **Namespaces** and choose the **default** namespace.
 
     ![The Kyma module is ready](images/2_16_default_namespace_selected.png)
 
-    
-5. In the **default** namespace view, go to **Workloads > Functions**, the newly created option that comes with the Serverless module.
+4. Within the namespace, go to **Workloads > Functions**, the newly created option that comes with the Serverless module.
 
     ![Functions are now available](images/2_17_workloads_functions.png)
 
+    Congratulations! Now you can create serverless Functions in Kyma.
 
-    Congratulations! Now you can create serverless Functions in Kyma. 
+### Create a "Hello-World" Kyma Function
 
+1. In the **Functions** view, choose **Create**.
 
-### Create a Hello-World Kyma Function
-
-
-1. Click **Create**. The "Create Function" wizard opens. 
     ![kyma function](images/2_18_function_edit.png)
 
-    Choose the **Default** template.
+2. Fill in the form in the **Create Function** view using the following details and choose **Create**.
 
-    - Provide a name, e.g. **hello-world**. 
-
-    - Choose **Language** > **JavaScript**. 
-
-    - Choose your **Runtime Version** > e.g. **node.js 20**.
-
-    - Choose **Function Profile** > keep the pre-defined value **XS**.
-
-    - Note that a YAML file will be created under **Source**. 
+   - **Template**: `default`
+   - **Name**: for example, `hello-world`
+   - **Language**: `JavaScript`
+   - **Runtime**: `node.js 20`
+   - **Function Profile**: `XS`
   
-    - You may now also check the other presets, "Advanced" and "YAML".  
-    
-    - Click **Create**.
-
-4. It takes a few seconds to create a Function. The result is a new Function **hello-world** in the list of Kyma Functions.
-
-    ![kyma function](images/2_19_running_function.png)
-
-    Click on the **hello-world** Function and check the "Configuration" tab, it does not have any "API Rules" yet. We need to create one to define the rules of accessing the Function using APIs.
+3. Creating a Function takes a few seconds. Select the newly created **hello-world** Function and switch to the **Configuration** tab. As it does not have any APIRules yet, you need to create one to define the rules of accessing the Function using APIs.
 
     ![kyma function no api rules](images/2_20_no_api_rules.png)
 
-5. Navigate to **Discovery and Network --> API Rules** and click **Create**.
+4. Go to **Discovery and Network > API Rules** and choose **Create**.
 
     ![kyma api](images/2_21_api_rule_create.png)
-   
-6. In the editor, provide a name, e.g. **hello-rule**, and add the following configuration details:
 
-    - As a Service, choose the function you just created: **hello-world**.  
-    
-    - As a Port, type **80**
-    
-    - Keep the prefilled Gateway.  
+5. Fill in the form in the **Create API Rule** view using the following details and choose **Create**
 
-    - You see that the **Host** definition is incomplete. Provide a unique name for the host that is not yet in use. E.g. **hello-host** and replace the wild card.  
-
-    - Keep the **Rules** section as is. 
-
-    - Click **Create**.
+   - **Name**: for example, `hello-rule`
+   - **Service Name**: the `hello-world` Function
+   - **Port**: `80`
+   - Leave the pre-defined details in the **Gateway** section
+   - **Host**, for example, `hello-host`
+   - Leave the pre-defined details in the **Rules** section
 
     ![kyma api rule](images/2_22_hello_rule.png)
 
-7. The API Rule "hello-rule" is created. 
-   
-    Click on the host URL to execute your function in a browser window.
+6. The "hello-rule" APIRule is created. Click on the **Host** URL to execute your Function in a browser window.
 
     ![kyma api](images/3_3_kyma_api_4.png)
 
-   
-8. A browser window will open showing the result of the function:
+    A browser window will open showing the following result:
 
      **`Hello World from the Kyma Function hello-world running on nodejs20!`**
-      
 
+### Deploy a microservice on Kyma
 
-### Deploy a Microservice on Kyma
+You already know how to deploy and expose a Function. You can do the same with a container microservice.
 
-You already know how to deploy and expose a Function. You can do the same with a container microservice. 
+To deploy a microservice, you will use the **orders-service** from Kyma examples. It is available:
 
-You will use the Kyma example **orders-service** for this. The Kyma example "orders-service" is available 
+   - in [GitHub](https://github.com/kyma-project/examples/blob/main/orders-service/README.md), or
+   - as a Docker image on Google Container Registry `eu.gcr.io/kyma-project/develop/orders-service:68a58069`.
 
- - on [GitHub](https://github.com/kyma-project/examples/blob/main/orders-service/README.md) 
+This tutorial shows how to deploy a microservice using the Docker image.
 
- - and as a docker image on Google Container Registry `eu.gcr.io/kyma-project/develop/orders-service:68a58069` .`
+1. Open Kyma dashboard, and go to a **Namespace**, for example, **default**.
 
+2. Go to **Workloads > Deployments** and choose **Create**.
 
-#### Deploy the Microservice from the Image
+3. Fill in the form in the **Create Deployments** view using the following details and then choose **Create**.
 
-
-1. Open your Kyma dashboard, select your **Namespace**, for example **default**.
-
-2. Select **Workloads --> Deployments** in the left navigation pane of your dashboard.
-
-3. Click on the button `+ Create Deployment` in the detail view.
-
-    ![create deployment](images/5_1_createdeployment.png)
-
-4. Choose the preset **Simple**  and provide the following parameters:
-
-    - Name: `orders-deployment`
-    
-    - Docker Image: `eu.gcr.io/kyma-project/develop/orders-service:68a58069`
-    
-
-    Optional: Choose the preset **Advanced** and provide the following parameters to save resources:
-    
+   - **Name**: `orders-deployment`
+   - **Docker Image**: `eu.gcr.io/kyma-project/develop/orders-service:68a58069`
+   - Optionally, provide the following parameters to save resources:
 
     | Profile | Value | Profile | Value |
     | :--- | ---: | :--- | ---: |
     | Memory requests | 10Mi | Memory limits   | 32Mi |
     | CPU requests (m) | 16m | CPU limits (m)  | 20m  |
 
-    
-
     ![deployment create](images/5_2_deployment_create.png)
 
-5. Click `Create`.
+You created the **orders-deployment** Deployment. To confirm that the operation was successful, check the **Status** field is showing **1/1** Pods running.
 
-6. A new deployment **orders-deployment** will be created.
+### Create a Service
 
-    The operation was successful if you can see 1/1 Pods running in the Deployment's view.
-   
-    ![deployment](images/5_3_deployment.png)
+Once you have the Deployment ready, you can create a Kubernetes Service to allow other Kubernetes resources to communicate with your microservice.
 
+1. Go to **Discovery and Network > Services** and choose **Create**.
 
-### Create the Service
+2. Fill in the form in the **Create Service** view using the following details and then choose **Create**.
 
-Once you have the deployment, you can create a Kubernetes Service to allow other Kubernetes resources to communicate with your microservice.
-
-1. Select **Discovery and Network --> Services** in your left-handed dashboard navigation pane
-
-2. Click on the button `+ Create Service` in the detail view.
-
-3. In the "Create Service" view, keep the preset "Simple".
-
-    Provide the following values:
-
-    - name: orders-service
-
-    - app: orders-deployment
-
-    Ports
-    
-    - name: orders-port
-    - Protocol: TCP
-    - Port: 80
-    - Target Port: 8080 (or other)
-    - Application Protocol: HTTP
+    - **Name**: `orders-service`
+    - **app**: `orders-deployment`
+    - Add a port using the following parameters:
+        - **Name**: `orders-port`
+        - **Protocol**: `TCP`
+        - **Port**: `80`
+        - **Target Port**: `8080` (or other)
+        - **Application Protocol**: `http`
 
     ![service create](images/5_4_service_create.png)
 
-4. A new service, called **orders-service** will be created.
-
+You created a new service, called **orders-service**.
 
 ### Expose the microservice
 
-You cannot access and test your new orders-service yet from outside the cluster. 
+You cannot access and test your new `orders-service` yet from outside of the cluster. To expose the microservice, first, you must create an **API Rule** for it, just like you did to expose your Function.
 
-To expose the microservice, you must create an **API Rule** for it, just like when you exposed our Function.
+1. Go to **Discovery and Network > API Rules** and choose **Create**.
 
-1. In your Kyma dashboard, go to **Discovery and Network --> API Rules**.
+    ![kyma api](images/2_21_api_rule_create.png)
 
-2. Click on `+ Create API Rule`. 
+2. Fill in the form in the **Create API Rule** view using the following details and choose **Create**
 
-3. A popup window opens. Keep the preset **Simple**.
+   - **Name**: `orders-apirule`
+   - **HTTP Request Timeout**: `30` (or any up to `3900`)
+   - **Service Name**: `orders-service`
+   - **Port**: `80`
+   - Leave the pre-defined details in the **Gateway** section
+   - **Host**: choose your host from the dropdown menu and replace the wildcard (*) with a name, for example, `orders-host`
+   - Leave the pre-defined details in the **Rules** section
 
-4. Provide the following values in the Create API Rule view:
+3. The `orders-apirule` is created. Wait for the **Status** to be `OK`.
 
-    - Name: orders-apirule
+4. Click on the **Host** URL to execute the Service in a browser window. A browser will open but the link will be empty because the underlying Docker image has no home page. Extend the URL by adding the **/orders** string.
 
-    - HTTP Request Timeout: 30 (or any up to 3900)
-   
-    - Service Name: orders-service (from dropdown list box).
+    For example:
+    URL: `https://orders-host.c-123456.kyma.ondemand.com/` has to become
+    URL: `https://orders-host.c-123456.kyma.ondemand.com/orders`
 
-    - Port: 80
+5. If you extend the URL correctly, you can see your orders: **`[]`**. It is empty, as you have not created orders in this tutorial so far.
 
-    In the section "Gateway", keep the pre-configured Namespace and Name. 
+#### Create sample content for your Service
 
-    - Choose your host from the Host dropdown. 
-  
-    - Replace the wildcard (*) with a name, for example: orders-host
+1. In the terminal call your service using curl. Replace `${APP_URL}` with your `orders-host` URL, for example, `https://orders-host.b1234567.kyma.ondemand.com/`.
 
-    Keep the values in the section "Rules".
-
-    ![api rule create](images/5_5_apirule_create.png)
-
-5. Choose Create.
-
-    A new API Rule will be created. Status must be **OK**.
-
-6. You can open the link by clicking on the provided URL. The provided link will be empty because the underlying docker image has no home page. 
-
-    The URL has to be extended with the String **/orders**.
-
-    For example: 
-
-    URL: `https://orders-host.c-123456.kyma.ondemand.com/` has to become 
-    
-    URL: `https://orders-host.c-123456.kyma.ondemand.com/orders` 
-
-    ![api rule start](images/5_6_apirule_start.png)
-
-
-7. If you extend the URL correctly, you can see your orders: **`[]`**. 
-
-    It is empty, as you have not created orders in this tutorial so far.
-
-
-#### Create some sample content for your service.
-
-1. First call your service with curl:
-
-    `curl -X GET ${APP_URL}/orders -k`
-
-    Replace `${APP_URL}` with your orders-host URL, for example, `https://orders-host.b1234567.kyma.ondemand.com/`
+    ```bash
+    curl -X GET ${APP_URL}/orders -k`
+    ```
 
     The result should be still **`[]`**.
 
-2. "Place" an order:
+2. Place an order using curl replacing the `${APP_URL}` with your `orders-host` URL:
 
-    Note: Windows User should use a Linux-like bash, like Git Bash in order to simply  copy and paste the sample code.
-
-    Do not forget to define or replace the APP_URL.
+    > **NOTE:** Windows users should use a Linux-like bash, for example, Git Bash to be able to copy and paste the sample code.
 
     ```bash
     curl -X POST ${APP_URL}/orders -k \
@@ -311,12 +212,10 @@ To expose the microservice, you must create an **API Rule** for it, just like wh
       }'
     ```
 
-3. Call your orders service in your browser again. The orders-service will return the order: 
-    
+3. Call your `orders-service` in your browser again. The `orders-service` will return the order:
+
     `[{"orderCode":"76272725","consignmentCode":"76272727","consignmentStatus":"PICKUP_COMPLETE"}]`
 
-    For a complete guide on how to run orders-service, see [kyma-project on GitHub](https://github.com/kyma-project/examples/blob/main/orders-service/README.md)
+    For a complete guide on how to run the `orders-service`, see [the example repository in GitHub](https://github.com/kyma-project/examples/blob/main/orders-service/README.md)
 
-
-
-Congratulations, you created and exposed your first microservice!   
+Congratulations, you created and exposed your first microservice!
