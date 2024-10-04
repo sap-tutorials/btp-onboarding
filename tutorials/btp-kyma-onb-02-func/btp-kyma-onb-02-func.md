@@ -29,8 +29,6 @@ You have created and set up your "SAP BTP, Kyma Environment" either manually or 
 
 2. Sroll down to **Environments** and choose the three dots **...** in the Kyma Environment line. Then, choose **Go to Dashboard**.
 
-    ![Link to Enter Kyma Dashbord](images/2_9_kyma_gotodashboard.png)
-
 3. If you use the pre-configured shared SAP Cloud Identity Services tenant, SAP ID service, as an identity provider in your enterprise or trial account, the Two-Factor Authentication is enabled and will be enforced.
 
     Go to your authenticator application on your mobile device and add a new account. Once you scan the QR Code, a password to access Kyma will be created. Enter the password in the **Passcode** field.
@@ -72,8 +70,6 @@ Congratulations, you are in Kyma dashboard!
 
 1. In the **Functions** view, choose **Create**.
 
-    ![kyma function](images/2_18_function_edit.png)
-
 2. Fill in the form in the **Create Function** view using the following details and choose **Create**.
 
    - **Template**: `default`
@@ -81,6 +77,8 @@ Congratulations, you are in Kyma dashboard!
    - **Language**: `JavaScript`
    - **Runtime**: `node.js 20`
    - **Function Profile**: `XS`
+
+   ![kyma function](images/2_18_function_edit.png)
   
 3. Creating a Function takes a few seconds. Select the newly created **hello-world** Function and switch to the **Configuration** tab. As it does not have any APIRules yet, you need to create one to define the rules of accessing the Function using APIs.
 
@@ -135,8 +133,6 @@ This tutorial shows how to deploy a microservice using the Docker image.
     | Memory requests | 10Mi | Memory limits   | 32Mi |
     | CPU requests (m) | 16m | CPU limits (m)  | 20m  |
 
-    ![deployment create](images/5_2_deployment_create.png)
-
 You created the **orders-deployment** Deployment. To confirm that the operation was successful, check the **Status** field is showing **1/1** Pods running.
 
 ### Create a Service
@@ -155,8 +151,6 @@ Once you have the Deployment ready, you can create a Kubernetes Service to allow
         - **Port**: `80`
         - **Target Port**: `8080` (or other)
         - **Application Protocol**: `http`
-
-    ![service create](images/5_4_service_create.png)
 
 You created a new service, called **orders-service**.
 

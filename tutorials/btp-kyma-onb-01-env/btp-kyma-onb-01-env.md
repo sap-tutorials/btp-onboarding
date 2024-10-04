@@ -91,25 +91,23 @@ Once your subaccount is entitled to use Kyma runtime, you can enable Kyma in you
 
     ![Enable Kyma](images/2_7_kymasub_enable_1.png)
 
-3. In the pop-up wizard, complete the Basic Info. Select **Plan** that will define the Infrustructure Provider, and leave the generated **Instance Name**, **Cluster Name**, and **Region**. Choose **Next**.
+3. In the pop-up wizard, complete the Basic Info section. Select the **Plan** that will define the Infrustructure Provider, and leave the generated **Instance Name**, **Cluster Name**, and **Region**. Choose **Next**.
 
     ![Step 1 of teh Kyma Wizard](images/2_8_kymasub_enable_2.png)
 
-4. Leave the default values in the *Additional Parameters** section and choose **Next**.
+4. Leave the default values in the **Additional Parameters** section and choose **Next**.
 
     ![Step 2 of the Kyma Wizard](images/2_8_kymasub_enable_3.png)
 
-5. Kyma Wizard Step 3: Review the instance details and choose **Create**.
+5. Review the instance details and choose **Create**.
 
     ![Step 3 of teh Kyma Wizard](images/2_8_kymasub_enable_4.png)
 
-6. The Kyma cluster is being created. This takes a while.
+6. The Kyma cluster is being created. It can take a while.
 
     ![Creation of Kyma Cluster will take some time](images/2_8_kymasub_enable_5.png)
 
 7. Once the cluster is created you will see a link to enter Kyma dashboard.
-
-    Click "Link to dashboard".
 
     ![Link to Enter Kyma Dashbord](images/2_9_kyma_gotodashboard.png)
 
