@@ -1,19 +1,24 @@
 name: Task Issue Labeler
+
 on:
   issues:
     types:
       - opened
+
+# Least privilege: labeling only needs to write issues. Overrides the repo
+# default so this job never inherits a broader token scope.
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   Label-New-Issues:
     runs-on: ubuntu-latest
     steps:
-    - name: SAP task issue labeler
-      uses: sap-tutorials/tutorial-actions@main        
-      with:
+      - name: SAP task issue labeler
+        # Pinned to a full commit SHA (was @main). A mutable branch/tag ref lets
+        # anyone who can push to tutorial-actions run code here with GITHUB_TOKEN
+        # on the next opened issue. SHA = tutorial-actions main @ 2026-10-29.
+        uses: sap-tutorials/tutorial-actions@538065eee0c5ae18cc88e430da2241a0668b9b79  # main
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
-
-
-
-
-

@@ -23,6 +23,13 @@ on:
   issues:
     types: [labeled]
 
+# Least privilege. This job authenticates with a GitHub App installation token
+# (SAP_TUTORIALS_APP_*) for all write operations, so the default GITHUB_TOKEN
+# needs no write scope. pull_request_target runs in the base-repo context with
+# access to secrets even for fork PRs, so keep the ambient token read-only.
+permissions:
+  contents: read
+
 jobs:
 
   community-id-requester:
@@ -36,14 +43,18 @@ jobs:
 
       - id: token_gen
         name: Generate app installation token
-        uses: machine-learning-apps/actions-app-token@0.21
+        # Third-party action pinned to a full commit SHA (was @0.21, a mutable
+        # tag on an archived repo). This action receives the SAP Tutorials App
+        # private key, so a re-pointed tag here would be a full App compromise.
+        uses: machine-learning-apps/actions-app-token@b5f0e20a640a9d046e57e5cbbb60159c18c2078c  # 0.21
         with:
           APP_PEM: ${{ secrets.SAP_TUTORIALS_APP_PEM_BASE64 }}
           APP_ID: ${{ secrets.SAP_TUTORIALS_APP_ID }}
 
       - id: checkout
         name: Check out the repo
-        uses: actions/checkout@v2
+        # Pinned to a full commit SHA and bumped v2 -> v4 (v2 is EOL / Node 12).
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
         with:
           token: ${{ steps.token_gen.outputs.app_token }}
 
